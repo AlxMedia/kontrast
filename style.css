@@ -162,19 +162,24 @@ body { font-family: "Titillium", Arial, sans-serif; }
 /* ------------------------------------ */
 input, textarea, button, select, label { font-family: inherit; }
 .themeform input,
+.themeform select,
 .themeform textarea,
 .themeform button,
-.themeform select,
 .themeform label { font-size: 14px; }
 .themeform input::-moz-focus-inner, 
 .themeform button::-moz-focus-inner { border: 0; padding: 0; }
 .themeform input[type="text"],
 .themeform input[type="password"],
 .themeform input[type="email"],
+.themeform input[type="url"],
+.themeform input[type="tel"],
+.themeform input[type="number"],
 .themeform input[type="submit"],
+.themeform select,
 .themeform button, 
 .themeform textarea { margin: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 0; border-radius: 0; }
 .themeform input, 
+.themeform select,
 .themeform textarea, 
 .themeform button { -moz-appearance: none; -webkit-appearance: none; -moz-transition: all .2s ease; -webkit-transition: all .2s ease; transition: all .2s ease; }
 .themeform select { appearance: normal; -moz-appearance: menulist; -webkit-appearance: menulist; }
@@ -183,11 +188,19 @@ input, textarea, button, select, label { font-family: inherit; }
 .themeform label { font-weight: 600; color: #333; }
 .themeform input[type="text"], 
 .themeform input[type="password"], 
-.themeform input[type="email"], 
+.themeform input[type="email"],
+.themeform input[type="url"],
+.themeform input[type="tel"],
+.themeform input[type="number"],
+.themeform select,
 .themeform textarea { background: #fff; border: 2px solid #ddd; color: #777; display: block; max-width: 100%; outline: none; padding: 7px 8px; }
 .themeform input[type="text"]:focus, 
 .themeform input[type="password"]:focus, 
-.themeform input[type="email"]:focus, 
+.themeform input[type="email"]:focus,
+.themeform input[type="url"]:focus,
+.themeform input[type="tel"]:focus,
+.themeform input[type="number"]:focus, 
+.themeform select:focus,
 .themeform textarea:focus { border-color: #ccc; color: #333; -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1); box-shadow: 0 0 3px rgba(0,0,0,0.1); }
 .themeform label .required { color: #26abd3; }
 .themeform input[type="submit"],
