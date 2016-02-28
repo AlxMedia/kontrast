@@ -769,7 +769,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 
 #footer-logo { display: block; margin: 0 auto; padding-top: 40px; max-height: 60px; -webkit-border-radius: 0; border-radius: 0; }
 
-#footer-widgets { background: #333; padding-top: 20px; border-bottom: 1px solid #333; }
+#footer-widgets { background: #222; padding-top: 20px; border-bottom: 1px solid #333; }
 #footer-widgets .pad { padding-bottom: 10px; }
 
 #footer-bottom { background: #222; }
