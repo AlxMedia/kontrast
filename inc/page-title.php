@@ -20,34 +20,34 @@
 			<?php if ( !have_posts() ): ?><i class="fa fa-exclamation-circle"></i><?php endif; ?>
 			<?php $search_results=$wp_query->found_posts;
 				if ($search_results==1) {
-					echo $search_results.' '.__('Search result','kontrast');
+					echo $search_results.' '.esc_html__('Search result','kontrast');
 				} else {
-					echo $search_results.' '.__('Search results','kontrast');
+					echo $search_results.' '.esc_html__('Search results','kontrast');
 				}
 			?>
 		</h1>
 		
 	<?php elseif ( is_404() ): ?>
-		<h1><i class="fa fa-exclamation-circle"></i><?php _e('Error 404.','kontrast'); ?> <span><?php _e('Page not found!','kontrast'); ?></span></h1>
+		<h1><i class="fa fa-exclamation-circle"></i><?php esc_html_e('Error 404.','kontrast'); ?> <span><?php esc_html_e('Page not found!','kontrast'); ?></span></h1>
 		
 	<?php elseif ( is_author() ): ?>
 		<?php $author = get_userdata( get_query_var('author') );?>
-		<h1><i class="fa fa-user"></i><?php _e('Author:','kontrast'); ?> <span><?php echo $author->display_name;?></span></h1>
+		<h1><i class="fa fa-user"></i><?php esc_html_e('Author:','kontrast'); ?> <span><?php echo $author->display_name;?></span></h1>
 		
 	<?php elseif ( is_category() ): ?>
-		<h1><i class="fa fa-folder-open"></i><?php _e('Category:','kontrast'); ?> <span><?php echo single_cat_title('', false); ?></span></h1>
+		<h1><i class="fa fa-folder-open"></i><?php esc_html_e('Category:','kontrast'); ?> <span><?php echo single_cat_title('', false); ?></span></h1>
 
 	<?php elseif ( is_tag() ): ?>
-		<h1><i class="fa fa-tags"></i><?php _e('Tagged:','kontrast'); ?> <span><?php echo single_tag_title('', false); ?></span></h1>
+		<h1><i class="fa fa-tags"></i><?php esc_html_e('Tagged:','kontrast'); ?> <span><?php echo single_tag_title('', false); ?></span></h1>
 		
 	<?php elseif ( is_day() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php _e('Daily Archive:','kontrast'); ?> <span><?php echo get_the_time('F j, Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Daily Archive:','kontrast'); ?> <span><?php echo get_the_time('F j, Y'); ?></span></h1>
 		
 	<?php elseif ( is_month() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php _e('Monthly Archive:','kontrast'); ?> <span><?php echo get_the_time('F Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Monthly Archive:','kontrast'); ?> <span><?php echo get_the_time('F Y'); ?></span></h1>
 			
 	<?php elseif ( is_year() ): ?>
-		<h1><i class="fa fa-calendar"></i><?php _e('Yearly Archive:','kontrast'); ?> <span><?php echo get_the_time('Y'); ?></span></h1>
+		<h1><i class="fa fa-calendar"></i><?php esc_html_e('Yearly Archive:','kontrast'); ?> <span><?php echo get_the_time('Y'); ?></span></h1>
 	
 	<?php else: ?>
 		<h2><?php the_title(); ?></h2>
