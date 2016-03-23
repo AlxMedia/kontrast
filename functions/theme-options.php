@@ -21,12 +21,11 @@ function custom_theme_options() {
       'content'       => array( 
         array(
           'id'        => 'general_help',
-          'title'     => 'Documentation',
+          'title'     => esc_html__( 'Documentation', 'kontrast' ),
           'content'   => '
 			<h1>Kontrast</h1>
-			<p>Thanks for using this theme! Enjoy.</p>
 			<ul>
-				<li>Read the theme documentation <a target="_blank" href="'.get_template_directory_uri().'/functions/documentation/documentation.html">here</a></li>
+				<li><a target="_blank" href="'.get_template_directory_uri().'/functions/documentation/documentation.html">' . esc_html__( 'Theme Documentation', 'kontrast' ) . '</a></li>
 			</ul>
 		'
         )
@@ -38,35 +37,35 @@ function custom_theme_options() {
 	'sections'        => array(
 		array(
 			'id'		=> 'general',
-			'title'		=> 'General'
+			'title'		=> esc_html__( 'General', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'blog',
-			'title'		=> 'Blog'
+			'title'		=> esc_html__( 'Blog', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'header',
-			'title'		=> 'Header'
+			'title'		=> esc_html__( 'Header', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'footer',
-			'title'		=> 'Footer'
+			'title'		=> esc_html__( 'Footer', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'layout',
-			'title'		=> 'Layout'
+			'title'		=> esc_html__( 'Layout', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'sidebars',
-			'title'		=> 'Sidebars'
+			'title'		=> esc_html__( 'Sidebars', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'social-links',
-			'title'		=> 'Social Links'
+			'title'		=> esc_html__( 'Social Links', 'kontrast' ),
 		),
 		array(
 			'id'		=> 'styling',
-			'title'		=> 'Styling'
+			'title'		=> esc_html__( 'Styling', 'kontrast' ),
 		),
 	),
 	
@@ -77,8 +76,8 @@ function custom_theme_options() {
 		// General: Custom CSS
 		array(
 			'id'		=> 'custom',
-			'label'		=> 'Custom Stylesheet',
-			'desc'		=> 'Load custom stylesheet [ <strong>custom.css</strong> ]<br /><i>Note: You must backup this file before a theme update. Consider using a <a target="_blank" href="http://codex.wordpress.org/Child_Themes">child theme</a> instead. More info about child themes can be found in the documentation.</i>',
+			'label'		=> esc_html__( 'Custom Stylesheet', 'kontrast' ),
+			'desc'		=> esc_html__( 'Load custom stylesheet (custom.css)', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'general'
@@ -86,8 +85,8 @@ function custom_theme_options() {
 		// General: Responsive Layout
 		array(
 			'id'		=> 'responsive',
-			'label'		=> 'Responsive Layout',
-			'desc'		=> 'Mobile and tablet optimizations [ <strong>responsive.css</strong> ]',
+			'label'		=> esc_html__( 'Responsive Layout', 'kontrast' ),
+			'desc'		=> esc_html__( 'Mobile and tablet optimizations (responsive.css)', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'general'
@@ -95,43 +94,43 @@ function custom_theme_options() {
 		// General: Mobile Sidebar
 		array(
 			'id'		=> 'mobile-sidebar-hide',
-			'label'		=> 'Mobile Sidebar Content',
-			'desc'		=> 'Hide sidebar content on low-resolution mobile devices (320px)',
+			'label'		=> esc_html__( 'Mobile Sidebar Content', 'kontrast' ),
+			'desc'		=> esc_html__( 'Hide sidebar content on low-resolution mobile devices (320px)', 'kontrast' ),
 			'type'		=> 'radio',
 			'std'		=> '1',
 			'section'	=> 'general',
 			'choices'	=> array(
 				array( 
 					'value' => '1',
-					'label' => 'Show sidebars'
+					'label' => esc_html__( 'Show sidebars', 'kontrast' ),
 				),
 				array( 
 					'value' => 's1',
-					'label' => 'Hide primary sidebar'
+					'label' => esc_html__( 'Hide primary sidebar', 'kontrast' ),
 				),
 				array( 
 					'value' => 's2',
-					'label' => 'Hide secondary sidebar'
+					'label' => esc_html__( 'Hide secondary sidebar', 'kontrast' ),
 				),
 				array( 
 					'value' => 's1-s2',
-					'label' => 'Hide both sidebars'
+					'label' => esc_html__( 'Hide both sidebars', 'kontrast' ),
 				)
 			)
 		),
 		// General: RSS Feed
 		array(
 			'id'		=> 'rss-feed',
-			'label'		=> 'FeedBurner URL',
-			'desc'		=> 'Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress feed e.g. http://feeds.feedburner.com/yoururlhere ',
+			'label'		=> esc_html__( 'FeedBurner URL', 'kontrast' ),
+			'desc'		=> esc_html__( 'Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress feed e.g. http://feeds.feedburner.com/yoururlhere', 'kontrast' ),
 			'type'		=> 'text',
 			'section'	=> 'general'
 		),
 		// General: Comments
 		array(
 			'id'		=> 'page-comments',
-			'label'		=> 'Page Comments',
-			'desc'		=> 'Comments on pages',
+			'label'		=> esc_html__( 'Page Comments', 'kontrast' ),
+			'desc'		=> esc_html__( 'Comments on pages', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'general'
@@ -139,8 +138,8 @@ function custom_theme_options() {
 		// General: Recommended Plugins
 		array(
 			'id'		=> 'recommended-plugins',
-			'label'		=> 'Recommended Plugins',
-			'desc'		=> 'Enable or disable the recommended plugins notice',
+			'label'		=> esc_html__( 'Recommended Plugins', 'kontrast' ),
+			'desc'		=> esc_html__( 'Enable or disable the recommended plugins notice', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'general'
@@ -148,24 +147,24 @@ function custom_theme_options() {
 		// Blog: Heading
 		array(
 			'id'		=> 'blog-heading',
-			'label'		=> 'Heading',
-			'desc'		=> 'Your blog heading',
+			'label'		=> esc_html__( 'Heading', 'kontrast' ),
+			'desc'		=> esc_html__( 'Your blog heading', 'kontrast' ),
 			'type'		=> 'text',
 			'section'	=> 'blog'
 		),
 		// Blog: Subheading
 		array(
 			'id'		=> 'blog-subheading',
-			'label'		=> 'Subheading',
-			'desc'		=> 'Your blog subheading',
+			'label'		=> esc_html__( 'Subheading', 'kontrast' ),
+			'desc'		=> esc_html__( 'Your blog subheading', 'kontrast' ),
 			'type'		=> 'text',
 			'section'	=> 'blog'
 		),
 		// Blog: Excerpt Length
 		array(
 			'id'			=> 'excerpt-length',
-			'label'			=> 'Excerpt Length',
-			'desc'			=> 'Max number of words',
+			'label'			=> esc_html__( 'Excerpt Length', 'kontrast' ),
+			'desc'			=> esc_html__( 'Max number of words', 'kontrast' ),
 			'std'			=> '34',
 			'type'			=> 'numeric-slider',
 			'section'		=> 'blog',
@@ -174,30 +173,30 @@ function custom_theme_options() {
 		// Blog: Featured Posts
 		array(
 			'id'		=> 'featured-posts-include',
-			'label'		=> 'Featured Posts',
-			'desc'		=> 'To show featured posts in the slider AND the content below<br /><i>Usually not recommended</i>',
+			'label'		=> esc_html__( 'Featured Posts', 'kontrast' ),
+			'desc'		=> esc_html__( 'To show featured posts in the slider AND the content below. Usually not recommended.', 'kontrast' ),
 			'type'		=> 'checkbox',
 			'section'	=> 'blog',
 			'choices'	=> array(
 				array( 
 					'value' => '1',
-					'label' => 'Include featured posts in content area'
+					'label' => esc_html__( 'Include featured posts in content area', 'kontrast' ),
 				)
 			)
 		),
 		// Blog: Featured Category
 		array(
 			'id'		=> 'featured-category',
-			'label'		=> 'Featured Category',
-			'desc'		=> 'By not selecting a category, it will show your latest post(s) from all categories',
+			'label'		=> esc_html__( 'Featured Category', 'kontrast' ),
+			'desc'		=> esc_html__( 'By not selecting a category, it will show your latest post(s) from all categories', 'kontrast' ),
 			'type'		=> 'category-select',
 			'section'	=> 'blog'
 		),
 		// Blog: Featured Category Count
 		array(
 			'id'			=> 'featured-posts-count',
-			'label'			=> 'Featured Post Count',
-			'desc'			=> 'Max number of featured posts to display. <br /><i>Set to 1 and it will show it without any slider script</i><br /><i>Set it to 0 to disable</i>',
+			'label'			=> esc_html__( 'Featured Post Count', 'kontrast' ),
+			'desc'			=> esc_html__( 'Max number of featured posts to display. Set to 1 and it will show it without any slider script. Set it to 0 to disable.', 'kontrast' ),
 			'std'			=> '1',
 			'type'			=> 'numeric-slider',
 			'section'		=> 'blog',
@@ -206,8 +205,8 @@ function custom_theme_options() {
 		// Blog: Standard
 		array(
 			'id'		=> 'blog-standard',
-			'label'		=> 'Standard Blog List',
-			'desc'		=> 'Show one post per row, image beside text',
+			'label'		=> esc_html__( 'Standard Blog List', 'kontrast' ),
+			'desc'		=> esc_html__( 'Show one post per row, image beside text', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -215,8 +214,8 @@ function custom_theme_options() {
 		// Blog: Thumbnail Placeholder
 		array(
 			'id'		=> 'placeholder',
-			'label'		=> 'Thumbnail Placeholder',
-			'desc'		=> 'Show featured image placeholders if no featured image is set',
+			'label'		=> esc_html__( 'Thumbnail Placeholder', 'kontrast' ),
+			'desc'		=> esc_html__( 'Show featured image placeholders if no featured image is set', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -224,8 +223,8 @@ function custom_theme_options() {
 		// Blog: Comment Count
 		array(
 			'id'		=> 'comment-count',
-			'label'		=> 'Thumbnail Comment Count',
-			'desc'		=> 'Comment count on thumbnails',
+			'label'		=> esc_html__( 'Thumbnail Comment Count', 'kontrast' ),
+			'desc'		=> esc_html__( 'Comment count on thumbnails', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -233,8 +232,8 @@ function custom_theme_options() {
 		// Blog: Single - Sharrre
 		array(
 			'id'		=> 'sharrre',
-			'label'		=> 'Single &mdash; Share Bar',
-			'desc'		=> 'Social sharing buttons for each article',
+			'label'		=> esc_html__( 'Single &mdash; Share Bar', 'kontrast' ),
+			'desc'		=> esc_html__( 'Social sharing buttons for each article', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -242,8 +241,8 @@ function custom_theme_options() {
 		// Blog: Single - Sharrre Sticky
 		array(
 			'id'		=> 'sharrre-scrollable',
-			'label'		=> 'Single &mdash; Scrollable Share Bar',
-			'desc'		=> 'Make social links stick to browser window when scrolling down',
+			'label'		=> esc_html__( 'Single &mdash; Scrollable Share Bar', 'kontrast' ),
+			'desc'		=> esc_html__( 'Make social links stick to browser window when scrolling down', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -251,16 +250,16 @@ function custom_theme_options() {
 		// Blog: Twitter Username
 		array(
 			'id'		=> 'twitter-username',
-			'label'		=> 'Twitter Username',
-			'desc'		=> 'Your @username will be added to share-tweets of your posts (optional)',
+			'label'		=> esc_html__( 'Twitter Username', 'kontrast' ),
+			'desc'		=> esc_html__( 'Your @username will be added to share-tweets of your posts (optional)', 'kontrast' ),
 			'type'		=> 'text',
 			'section'	=> 'blog'
 		),
 		// Blog: Single - Authorbox
 		array(
 			'id'		=> 'author-bio',
-			'label'		=> 'Single &mdash; Author Bio',
-			'desc'		=> 'Shows post author description, if it exists',
+			'label'		=> esc_html__( 'Single &mdash; Author Bio', 'kontrast' ),
+			'desc'		=> esc_html__( 'Shows post author description, if it exists', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'blog'
@@ -268,58 +267,58 @@ function custom_theme_options() {
 		// Blog: Single - Related Posts
 		array(
 			'id'		=> 'related-posts',
-			'label'		=> 'Single &mdash; Related Posts',
-			'desc'		=> 'Shows randomized related articles below the post',
+			'label'		=> esc_html__( 'Single &mdash; Related Posts', 'kontrast' ),
+			'desc'		=> esc_html__( 'Shows randomized related articles below the post', 'kontrast' ),
 			'std'		=> 'categories',
 			'type'		=> 'radio',
 			'section'	=> 'blog',
 			'choices'	=> array(
 				array( 
 					'value' => '1',
-					'label' => 'Disable'
+					'label' => esc_html__( 'Disable', 'kontrast' ),
 				),
 				array( 
 					'value' => 'categories',
-					'label' => 'Related by categories'
+					'label' => esc_html__( 'Related by categories', 'kontrast' ),
 				),
 				array( 
 					'value' => 'tags',
-					'label' => 'Related by tags'
+					'label' => esc_html__( 'Related by tags', 'kontrast' ),
 				)
 			)
 		),
 		// Blog: Single - Post Navigation Location
 		array(
 			'id'		=> 'post-nav',
-			'label'		=> 'Single &mdash; Post Navigation',
-			'desc'		=> 'Shows links to the next and previous article',
+			'label'		=> esc_html__( 'Single &mdash; Post Navigation', 'kontrast' ),
+			'desc'		=> esc_html__( 'Shows links to the next and previous article', 'kontrast' ),
 			'std'		=> 's1',
 			'type'		=> 'radio',
 			'section'	=> 'blog',
 			'choices'	=> array(
 				array( 
 					'value' => '1',
-					'label' => 'Disable'
+					'label' => esc_html__( 'Disable', 'kontrast' ),
 				),
 				array( 
 					'value' => 's1',
-					'label' => 'Sidebar Primary'
+					'label' => esc_html__( 'Sidebar Primary', 'kontrast' ),
 				),
 				array( 
 					'value' => 's2',
-					'label' => 'Sidebar Secondary'
+					'label' => esc_html__( 'Sidebar Secondary', 'kontrast' ),
 				),
 				array( 
 					'value' => 'content',
-					'label' => 'Below content'
+					'label' => esc_html__( 'Below content', 'kontrast' ),
 				)
 			)
 		),
 		// Header: Ads
 		array(
 			'id'		=> 'header-ads',
-			'label'		=> 'Header Ads',
-			'desc'		=> 'Header widget ads area',
+			'label'		=> esc_html__( 'Header Ads', 'kontrast' ),
+			'desc'		=> esc_html__( 'Header widget ads area', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'header'
@@ -327,16 +326,16 @@ function custom_theme_options() {
 		// Header: Custom Logo
 		array(
 			'id'		=> 'custom-logo',
-			'label'		=> 'Custom Logo',
-			'desc'		=> 'Upload your custom logo image. Set logo max-height in styling options.',
+			'label'		=> esc_html__( 'Custom Logo', 'kontrast' ),
+			'desc'		=> esc_html__( 'Upload your custom logo image. Set logo max-height in styling options.', 'kontrast' ),
 			'type'		=> 'upload',
 			'section'	=> 'header'
 		),
 		// Header: Site Description
 		array(
 			'id'		=> 'site-description',
-			'label'		=> 'Site Description',
-			'desc'		=> 'The description that appears next to your logo',
+			'label'		=> esc_html__( 'Site Description', 'kontrast' ),
+			'desc'		=> esc_html__( 'The description that appears next to your logo', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'header'
@@ -344,16 +343,16 @@ function custom_theme_options() {
 		// Header: Header Image
 		array(
 			'id'		=> 'header-image',
-			'label'		=> 'Header Image',
-			'desc'		=> 'Upload a header image. This will disable header title/logo and description.',
+			'label'		=> esc_html__( 'Header Image', 'kontrast' ),
+			'desc'		=> esc_html__( 'Upload a header image. This will disable header title/logo and description.', 'kontrast' ),
 			'type'		=> 'upload',
 			'section'	=> 'header'
 		),
 		// Footer: Ads
 		array(
 			'id'		=> 'footer-ads',
-			'label'		=> 'Footer Ads',
-			'desc'		=> 'Footer widget ads area',
+			'label'		=> esc_html__( 'Footer Ads', 'kontrast' ),
+			'desc'		=> esc_html__( 'Footer widget ads area', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'footer'
@@ -361,8 +360,8 @@ function custom_theme_options() {
 		// Footer: Widget Columns
 		array(
 			'id'		=> 'footer-widgets',
-			'label'		=> 'Footer Widget Columns',
-			'desc'		=> 'Select columns to enable footer widgets<br /><i>Recommended number: 3</i>',
+			'label'		=> esc_html__( 'Footer Widget Columns', 'kontrast' ),
+			'desc'		=> esc_html__( 'Select columns to enable footer widgets. Recommended number: 3', 'kontrast' ),
 			'std'		=> '0',
 			'type'		=> 'radio-image',
 			'section'	=> 'footer',
@@ -370,27 +369,27 @@ function custom_theme_options() {
 			'choices'	=> array(
 				array(
 					'value'		=> '0',
-					'label'		=> 'Disable',
+					'label'		=> esc_html__( 'Disable', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> '1',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/footer-widgets-1.png'
 				),
 				array(
 					'value'		=> '2',
-					'label'		=> '2 Columns',
+					'label'		=> esc_html__( '2 Columns', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/footer-widgets-2.png'
 				),
 				array(
 					'value'		=> '3',
-					'label'		=> '3 Columns',
+					'label'		=> esc_html__( '3 Columns', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/footer-widgets-3.png'
 				),
 				array(
 					'value'		=> '4',
-					'label'		=> '4 Columns',
+					'label'		=> esc_html__( '4 Columns', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/footer-widgets-4.png'
 				)
 			)
@@ -398,24 +397,24 @@ function custom_theme_options() {
 		// Footer: Custom Logo
 		array(
 			'id'		=> 'footer-logo',
-			'label'		=> 'Footer Logo',
-			'desc'		=> 'Upload your custom logo image',
+			'label'		=> esc_html__( 'Footer Logo', 'kontrast' ),
+			'desc'		=> esc_html__( 'Upload your custom logo image', 'kontrast' ),
 			'type'		=> 'upload',
 			'section'	=> 'footer'
 		),
 		// Footer: Copyright
 		array(
 			'id'		=> 'copyright',
-			'label'		=> 'Footer Copyright',
-			'desc'		=> 'Replace the footer copyright text',
+			'label'		=> esc_html__( 'Footer Copyright', 'kontrast' ),
+			'desc'		=> esc_html__( 'Replace the footer copyright text', 'kontrast' ),
 			'type'		=> 'text',
 			'section'	=> 'footer'
 		),
 		// Footer: Credit
 		array(
 			'id'		=> 'credit',
-			'label'		=> 'Footer Credit',
-			'desc'		=> 'Footer credit text',
+			'label'		=> esc_html__( 'Footer Credit', 'kontrast' ),
+			'desc'		=> esc_html__( 'Footer credit text', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'footer'
@@ -423,40 +422,40 @@ function custom_theme_options() {
 		// Layout : Global
 		array(
 			'id'		=> 'layout-global',
-			'label'		=> 'Global Layout',
-			'desc'		=> 'Other layouts will override this option if they are set',
+			'label'		=> esc_html__( 'Global Layout', 'kontrast' ),
+			'desc'		=> esc_html__( 'Other layouts will override this option if they are set', 'kontrast' ),
 			'std'		=> 'col-3cm',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -464,45 +463,45 @@ function custom_theme_options() {
 		// Layout : Home
 		array(
 			'id'		=> 'layout-home',
-			'label'		=> 'Home',
-			'desc'		=> '[ <strong>is_home</strong> ] Posts homepage layout',
+			'label'		=> esc_html__( 'Home', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_home) Posts homepage layout', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -510,45 +509,45 @@ function custom_theme_options() {
 		// Layout : Single
 		array(
 			'id'		=> 'layout-single',
-			'label'		=> 'Single',
-			'desc'		=> '[ <strong>is_single</strong> ] Single post layout - If a post has a set layout, it will override this.',
+			'label'		=> esc_html__( 'Single', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_single) Single post layout - If a post has a set layout, it will override this.', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -556,45 +555,45 @@ function custom_theme_options() {
 		// Layout : Archive
 		array(
 			'id'		=> 'layout-archive',
-			'label'		=> 'Archive',
-			'desc'		=> '[ <strong>is_archive</strong> ] Category, date, tag and author archive layout',
+			'label'		=> esc_html__( 'Archive', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_archive) Category, date, tag and author archive layout', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -602,45 +601,45 @@ function custom_theme_options() {
 		// Layout : Archive - Category
 		array(
 			'id'		=> 'layout-archive-category',
-			'label'		=> 'Archive &mdash; Category',
-			'desc'		=> '[ <strong>is_category</strong> ] Category archive layout',
+			'label'		=> esc_html__( 'Archive &mdash; Category', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_category) Category archive layout', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -648,45 +647,45 @@ function custom_theme_options() {
 		// Layout : Search
 		array(
 			'id'		=> 'layout-search',
-			'label'		=> 'Search',
-			'desc'		=> '[ <strong>is_search</strong> ] Search page layout',
+			'label'		=> esc_html__( 'Search', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_search) Search page layout', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -694,45 +693,45 @@ function custom_theme_options() {
 		// Layout : Error 404
 		array(
 			'id'		=> 'layout-404',
-			'label'		=> 'Error 404',
-			'desc'		=> '[ <strong>is_404</strong> ] Error 404 page layout',
+			'label'		=> esc_html__( 'Error 404', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_404) Error 404 page layout', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -740,45 +739,45 @@ function custom_theme_options() {
 		// Layout : Default Page
 		array(
 			'id'		=> 'layout-page',
-			'label'		=> 'Default Page',
-			'desc'		=> '[ <strong>is_page</strong> ] Default page layout - If a page has a set layout, it will override this.',
+			'label'		=> esc_html__( 'Default Page', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_page) Default page layout - If a page has a set layout, it will override this.', 'kontrast' ),
 			'std'		=> 'inherit',
 			'type'		=> 'radio-image',
 			'section'	=> 'layout',
 			'choices'	=> array(
 				array(
 					'value'		=> 'inherit',
-					'label'		=> 'Inherit Global Layout',
+					'label'		=> esc_html__( 'Inherit Global Layout', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/layout-off.png'
 				),
 				array(
 					'value'		=> 'col-1c',
-					'label'		=> '1 Column',
+					'label'		=> esc_html__( '1 Column', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-1c.png'
 				),
 				array(
 					'value'		=> 'col-2cl',
-					'label'		=> '2 Column Left',
+					'label'		=> esc_html__( '2 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cl.png'
 				),
 				array(
 					'value'		=> 'col-2cr',
-					'label'		=> '2 Column Right',
+					'label'		=> esc_html__( '2 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-2cr.png'
 				),
 				array(
 					'value'		=> 'col-3cm',
-					'label'		=> '3 Column Middle',
+					'label'		=> esc_html__( '3 Column Middle', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cm.png'
 				),
 				array(
 					'value'		=> 'col-3cl',
-					'label'		=> '3 Column Left',
+					'label'		=> esc_html__( '3 Column Left', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cl.png'
 				),
 				array(
 					'value'		=> 'col-3cr',
-					'label'		=> '3 Column Right',
+					'label'		=> esc_html__( '3 Column Right', 'kontrast' ),
 					'src'		=> get_template_directory_uri() . '/functions/images/col-3cr.png'
 				)
 			)
@@ -786,16 +785,16 @@ function custom_theme_options() {
 		// Sidebars: Create Areas
 		array(
 			'id'		=> 'sidebar-areas',
-			'label'		=> 'Create Sidebars',
-			'desc'		=> 'You must save changes for the new areas to appear below. <br /><i>Warning: Make sure each area has a unique ID.</i>',
+			'label'		=> esc_html__( 'Create Sidebars', 'kontrast' ),
+			'desc'		=> esc_html__( 'You must save changes for the new areas to appear below. Warning: Make sure each area has a unique ID.', 'kontrast' ),
 			'type'		=> 'list-item',
 			'section'	=> 'sidebars',
 			'choices'	=> array(),
 			'settings'	=> array(
 				array(
 					'id'		=> 'id',
-					'label'		=> 'Sidebar ID',
-					'desc'		=> 'This ID must be unique, for example "sidebar-about"',
+					'label'		=> esc_html__( 'Sidebar ID', 'kontrast' ),
+					'desc'		=> esc_html__( 'This ID must be unique, for example "sidebar-about"', 'kontrast' ),
 					'std'		=> 'sidebar-',
 					'type'		=> 'text',
 					'choices'	=> array()
@@ -805,145 +804,145 @@ function custom_theme_options() {
 		// Sidebar 1 & 2
 		array(
 			'id'		=> 's1-home',
-			'label'		=> 'Home',
-			'desc'		=> '[ <strong>is_home</strong> ] Primary',
+			'label'		=> esc_html__( 'Home', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_home) Primary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-home',
-			'label'		=> 'Home',
-			'desc'		=> '[ <strong>is_home</strong> ] Secondary',
+			'label'		=> esc_html__( 'Home', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_home) Secondary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-single',
-			'label'		=> 'Single',
-			'desc'		=> '[ <strong>is_single</strong> ] Primary - If a single post has a unique sidebar, it will override this.',
+			'label'		=> esc_html__( 'Single', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_single) Primary - If a single post has a unique sidebar, it will override this.', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-single',
-			'label'		=> 'Single',
-			'desc'		=> '[ <strong>is_single</strong> ] Secondary - If a single post has a unique sidebar, it will override this.',
+			'label'		=> esc_html__( 'Single', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_single) Secondary - If a single post has a unique sidebar, it will override this.', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-archive',
-			'label'		=> 'Archive',
-			'desc'		=> '[ <strong>is_archive</strong> ] Primary',
+			'label'		=> esc_html__( 'Archive', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_archive) Primary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-archive',
-			'label'		=> 'Archive',
-			'desc'		=> '[ <strong>is_archive</strong> ] Secondary',
+			'label'		=> esc_html__( 'Archive', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_archive) Secondary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-archive-category',
-			'label'		=> 'Archive &mdash; Category',
-			'desc'		=> '[ <strong>is_category</strong> ] Primary',
+			'label'		=> esc_html__( 'Archive &mdash; Category', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_category) Primary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-archive-category',
-			'label'		=> 'Archive &mdash; Category',
-			'desc'		=> '[ <strong>is_category</strong> ] Secondary',
+			'label'		=> esc_html__( 'Archive &mdash; Category', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_category) Secondary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-search',
-			'label'		=> 'Search',
-			'desc'		=> '[ <strong>is_search</strong> ] Primary',
+			'label'		=> esc_html__( 'Search', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_search) Primary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-search',
-			'label'		=> 'Search',
-			'desc'		=> '[ <strong>is_search</strong> ] Secondary',
+			'label'		=> esc_html__( 'Search', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_search) Secondary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-404',
-			'label'		=> 'Error 404',
-			'desc'		=> '[ <strong>is_404</strong> ] Primary',
+			'label'		=> esc_html__( 'Error 404', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_404) Primary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-404',
-			'label'		=> 'Error 404',
-			'desc'		=> '[ <strong>is_404</strong> ] Secondary',
+			'label'		=> esc_html__( 'Error 404', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_404) Secondary', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's1-page',
-			'label'		=> 'Default Page',
-			'desc'		=> '[ <strong>is_page</strong> ] Primary - If a page has a unique sidebar, it will override this.',
+			'label'		=> esc_html__( 'Default Page', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_page) Primary - If a page has a unique sidebar, it will override this.', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		array(
 			'id'		=> 's2-page',
-			'label'		=> 'Default Page',
-			'desc'		=> '[ <strong>is_page</strong> ] Secondary - If a page has a unique sidebar, it will override this.',
+			'label'		=> esc_html__( 'Default Page', 'kontrast' ),
+			'desc'		=> esc_html__( '(is_page) Secondary - If a page has a unique sidebar, it will override this.', 'kontrast' ),
 			'type'		=> 'sidebar-select',
 			'section'	=> 'sidebars'
 		),
 		// Social Links : List
 		array(
 			'id'		=> 'social-links',
-			'label'		=> 'Social Links',
-			'desc'		=> 'Create and organize your social links',
+			'label'		=> esc_html__( 'Social Links', 'kontrast' ),
+			'desc'		=> esc_html__( 'Create and organize your social links', 'kontrast' ),
 			'type'		=> 'list-item',
 			'section'	=> 'social-links',
 			'choices'	=> array(),
 			'settings'	=> array(
 				array(
 					'id'		=> 'social-icon',
-					'label'		=> 'Icon Name',
-					'desc'		=> 'Font Awesome icon names [<a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>View all</strong>]</a>  ',
+					'label'		=> esc_html__( 'Icon Name', 'kontrast' ),
+					'desc'		=> esc_html__( 'Font Awesome icon names:', 'kontrast' ) . ' <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'kontrast' ) . ' </strong></a>',
 					'std'		=> 'fa-',
 					'type'		=> 'text',
 					'choices'	=> array()
 				),
 				array(
 					'id'		=> 'social-link',
-					'label'		=> 'Link',
-					'desc'		=> 'Enter the full url for your icon button',
+					'label'		=> esc_html__( 'Link', 'kontrast' ),
+					'desc'		=> esc_html__( 'Enter the full url for your icon button', 'kontrast' ),
 					'std'		=> 'http://',
 					'type'		=> 'text',
 					'choices'	=> array()
 				),
 				array(
 					'id'		=> 'social-color',
-					'label'		=> 'Icon Color',
-					'desc'		=> 'Set a unique color for your icon (optional)',
+					'label'		=> esc_html__( 'Icon Color', 'kontrast' ),
+					'desc'		=> esc_html__( 'Set a unique color for your icon (optional)', 'kontrast' ),
 					'std'		=> '',
 					'type'		=> 'colorpicker',
 					'section'	=> 'styling'
 				),
 				array(
 					'id'		=> 'social-target',
-					'label'		=> 'Link Options',
+					'label'		=> esc_html__( 'Link Options', 'kontrast' ),
 					'desc'		=> '',
 					'std'		=> '',
 					'type'		=> 'checkbox',
 					'choices'	=> array(
 						array( 
 							'value' => '_blank',
-							'label' => 'Open in new window'
+							'label' => esc_html__( 'Open in new window', 'kontrast' ),
 						)
 					)
 				)
@@ -952,8 +951,8 @@ function custom_theme_options() {
 		// Styling: Enable
 		array(
 			'id'		=> 'dynamic-styles',
-			'label'		=> 'Dynamic Styles',
-			'desc'		=> 'Turn on to use the styling options below',
+			'label'		=> esc_html__( 'Dynamic Styles', 'kontrast' ),
+			'desc'		=> esc_html__( 'Turn on to use the styling options below', 'kontrast' ),
 			'std'		=> 'on',
 			'type'		=> 'on-off',
 			'section'	=> 'styling'
@@ -961,8 +960,8 @@ function custom_theme_options() {
 		// Styling: Boxed Layout
 		array(
 			'id'		=> 'boxed',
-			'label'		=> 'Boxed Layout',
-			'desc'		=> 'Use a boxed layout',
+			'label'		=> esc_html__( 'Boxed Layout', 'kontrast' ),
+			'desc'		=> esc_html__( 'Use a boxed layout', 'kontrast' ),
 			'std'		=> 'off',
 			'type'		=> 'on-off',
 			'section'	=> 'styling'
@@ -970,8 +969,8 @@ function custom_theme_options() {
 		// Styling: Font
 		array(
 			'id'		=> 'font',
-			'label'		=> 'Font',
-			'desc'		=> 'Select font for the theme',
+			'label'		=> esc_html__( 'Font', 'kontrast' ),
+			'desc'		=> esc_html__( 'Select font for the theme', 'kontrast' ),
 			'type'		=> 'select',
 			'std'		=> 'source-sans-pro',
 			'section'	=> 'styling',
@@ -1077,8 +1076,8 @@ function custom_theme_options() {
 		// Styling: Container Width
 		array(
 			'id'			=> 'container-width',
-			'label'			=> 'Website Max-width',
-			'desc'			=> 'Max-width of the container. If you use 2 sidebars, your container should be at least 1200px.<br /><i>Note: For 720px content (default) use <strong>1380px</strong> for 2 sidebars and <strong>1120px</strong> for 1 sidebar. If you use a combination of both, try something inbetween.</i>',
+			'label'			=> esc_html__( 'Website Max-width', 'kontrast' ),
+			'desc'			=> esc_html__( 'Max-width of the container. If you use 2 sidebars, your container should be at least 1200px. Note: For 720px content (default) use 1380px for 2 sidebars and 1120px for 1 sidebar. If you use a combination of both, try something inbetween.', 'kontrast' ),
 			'std'			=> '1380',
 			'type'			=> 'numeric-slider',
 			'section'		=> 'styling',
@@ -1087,25 +1086,25 @@ function custom_theme_options() {
 		// Styling: Sidebar Padding
 		array(
 			'id'		=> 'sidebar-padding',
-			'label'		=> 'Sidebar Width',
+			'label'		=> esc_html__( 'Sidebar Width', 'kontrast' ),
 			'type'		=> 'radio',
 			'std'		=> '30',
 			'section'	=> 'styling',
 			'choices'	=> array(
 				array( 
 					'value' => '30',
-					'label' => '280px primary, 200px secondary (30px padding)'
+					'label' => esc_html__( '280px primary, 200px secondary (30px padding)', 'kontrast' ),
 				),
 				array( 
 					'value' => '20',
-					'label' => '300px primary, 220px secondary (20px padding)'
+					'label' => esc_html__( '300px primary, 220px secondary (20px padding)', 'kontrast' ),
 				)
 			)
 		),
 		// Styling: Primary Color
 		array(
 			'id'		=> 'color-1',
-			'label'		=> 'Primary Color',
+			'label'		=> esc_html__( 'Primary Color', 'kontrast' ),
 			'std'		=> '#26abd3',
 			'type'		=> 'colorpicker',
 			'section'	=> 'styling',
@@ -1114,7 +1113,7 @@ function custom_theme_options() {
 		// Styling: Secondary Color
 		array(
 			'id'		=> 'color-bubble',
-			'label'		=> 'Comments Bubble',
+			'label'		=> esc_html__( 'Comments Bubble', 'kontrast' ),
 			'std'		=> '#dd5827',
 			'type'		=> 'colorpicker',
 			'section'	=> 'styling',
@@ -1123,7 +1122,7 @@ function custom_theme_options() {
 		// Styling: Footer Background
 		array(
 			'id'		=> 'color-footer',
-			'label'		=> 'Footer Background',
+			'label'		=> esc_html__( 'Footer Background', 'kontrast' ),
 			'std'		=> '#222222',
 			'type'		=> 'colorpicker',
 			'section'	=> 'styling',
@@ -1132,7 +1131,7 @@ function custom_theme_options() {
 		// Styling: Footer Menu Background
 		array(
 			'id'		=> 'color-footer-menu',
-			'label'		=> 'Footer Menu Background',
+			'label'		=> esc_html__( 'Footer Menu Background', 'kontrast' ),
 			'std'		=> '#333333',
 			'type'		=> 'colorpicker',
 			'section'	=> 'styling',
@@ -1141,8 +1140,8 @@ function custom_theme_options() {
 		// Styling: Header Logo Max-height
 		array(
 			'id'			=> 'logo-max-height',
-			'label'			=> 'Header Logo Image Max-height',
-			'desc'			=> 'Your logo image should have the double height of this to be high resolution',
+			'label'			=> esc_html__( 'Header Logo Image Max-height', 'kontrast' ),
+			'desc'			=> esc_html__( 'Your logo image should have the double height of this to be high resolution', 'kontrast' ),
 			'std'			=> '60',
 			'type'			=> 'numeric-slider',
 			'section'		=> 'styling',
@@ -1151,8 +1150,8 @@ function custom_theme_options() {
 		// Styling: Image Border Radius
 		array(
 			'id'			=> 'image-border-radius',
-			'label'			=> 'Image Border Radius',
-			'desc'			=> 'Give your thumbnails and layout images rounded corners',
+			'label'			=> esc_html__( 'Image Border Radius', 'kontrast' ),
+			'desc'			=> esc_html__( 'Give your thumbnails and layout images rounded corners', 'kontrast' ),
 			'std'			=> '0',
 			'type'			=> 'numeric-slider',
 			'section'		=> 'styling',
@@ -1161,8 +1160,8 @@ function custom_theme_options() {
 		// Styling: Body Background
 		array(
 			'id'		=> 'body-background',
-			'label'		=> 'Body Background',
-			'desc'		=> 'Set background color and/or upload your own background image',
+			'label'		=> esc_html__( 'Body Background', 'kontrast' ),
+			'desc'		=> esc_html__( 'Set background color and/or upload your own background image', 'kontrast' ),
 			'type'		=> 'background',
 			'section'	=> 'styling'
 		)
