@@ -37,11 +37,11 @@
 		<?php endif; ?>
 		
 		<?php if ( ot_get_option('header-ads') == 'on' ): ?>
-		<section class="container" id="header-ads">
+		<div class="container" id="header-ads">
 			<div class="container-inner">
 				<?php dynamic_sidebar( 'header-ads' ); ?>
 			</div><!--/.container-inner-->
-		</section><!--/.container-->
+		</div><!--/.container-->
 		<?php endif; ?>
 		
 		<div class="container-inner group">
