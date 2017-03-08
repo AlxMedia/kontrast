@@ -594,6 +594,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 .toggle-search { color: #555; font-size: 18px; line-height: 24px; cursor: pointer; padding: 9px 20px; display: block; position: absolute; right: 0; top: -42px; }
 .toggle-search:hover,
 .toggle-search.active { color: #26abd3; }
+.toggle-search.active .fa.fa-search:before { content: "\f00d"; font-size: 22px; }
 .search-expand { display: none; background: #fff; position: absolute; top: 0; right: 0; width: 340px; }
 .search-expand-inner { padding: 0 10px 10px; border: 1px solid #e5e5e5; border-top: 0; }
 .search-expand .themeform input { background: #f2f2f2; width: 100%; border: 1px solid #eee; border-radius: 0; }
