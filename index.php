@@ -10,7 +10,7 @@
 		
 		<?php if ( have_posts() ) : $post = $posts[0]; $c=0; ?>
 			
-			<?php if ( ot_get_option('blog-standard') == 'on' ): ?>
+			<?php if ( get_theme_mod('blog-standard','off') == 'on' ): ?>
 				<?php while ( have_posts() ): the_post(); ?>
 					
 					<?php

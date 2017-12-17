@@ -2,8 +2,8 @@
 	<span><?php esc_html_e('Share','kontrast'); ?></span>
 	<div id="twitter" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Tweet', 'kontrast'); ?>"></div>
 	<div id="facebook" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Like', 'kontrast'); ?>"></div>
-	<div id="googleplus" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('+1', 'kontrast'); ?>"></div>
 	<div id="pinterest" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Pin It', 'kontrast'); ?>"></div>
+	<div id="linkedin" data-url="<?php echo the_permalink(); ?>" data-text="<?php echo the_title(); ?>" data-title="<?php esc_html_e('Share on LinkedIn', 'kontrast'); ?>"></div>
 </div><!--/.sharrre-container-->
 
 <script type="text/javascript">
@@ -16,7 +16,7 @@
 			template: '<a class="box" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
-			buttons: { twitter: {via: '<?php echo esc_attr( ot_get_option('twitter-username') ); ?>'}},
+			buttons: { twitter: {via: '<?php echo esc_attr( get_theme_mod('twitter-username') ); ?>'}},
 			click: function(api, options){
 				api.simulateClick();
 				api.openPopup('twitter');
@@ -35,25 +35,11 @@
 				api.openPopup('facebook');
 			}
 		});
-		jQuery('#googleplus').sharrre({
-			share: {
-				googlePlus: true
-			},
-			template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
-			enableHover: false,
-			enableTracking: true,
-			buttons:{size: 'tall'},
-			urlCurl: '<?php echo get_template_directory_uri() .'/js/sharrre.php'; ?>',
-			click: function(api, options){
-				api.simulateClick();
-				api.openPopup('googlePlus');
-			}
-		});
 		jQuery('#pinterest').sharrre({
 			share: {
 				pinterest: true
 			},
-			template: '<a class="box" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
 			enableHover: false,
 			enableTracking: true,
 			buttons: {
@@ -66,8 +52,25 @@
 				api.openPopup('pinterest');
 			}
 		});
+		jQuery('#linkedin').sharrre({
+			share: {
+				linkedin: true
+			},
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-linkedin-square"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons: {
+			linkedin: {
+				description: '<?php echo the_title(); ?>'<?php if( has_post_thumbnail() ){ ?>,media: '<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>'<?php } ?>
+				}
+			},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('linkedin');
+			}
+		});
 		
-		<?php if ( ot_get_option( 'sharrre-scrollable' ) == 'on' ): ?>		
+		<?php if ( get_theme_mod( 'sharrre-scrollable' ) == 'on' ): ?>		
 			// Scrollable sharrre bar, contributed by Erik Frye. Awesome!
 			var shareContainer = jQuery(".sharrre-container"),
 			header = jQuery('#header'),
