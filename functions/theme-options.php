@@ -749,7 +749,7 @@ Kirki::add_field( 'alx_kontrast', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_attr__( 'Icon Name', 'kontrast' ),
-			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook', 'kontrast' ),
+			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook ', 'kontrast' ) . ' <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'kontrast' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(

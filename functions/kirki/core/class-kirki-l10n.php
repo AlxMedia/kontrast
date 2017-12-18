@@ -123,7 +123,7 @@ class Kirki_L10n {
 		}
 
 		// Check if the domain is "kirki".
-		if ( 'kirki' === $domain ) {
+		if ( 'kontrast' === $domain ) {
 			return true;
 		}
 		return $override;
