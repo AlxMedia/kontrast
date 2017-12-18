@@ -200,6 +200,7 @@ Kirki::add_field( 'alx_kontrast', array(
 	'section'		=> 'blog',
 	'default'		=> '',
 	'choices'		=> Kirki_Helper::get_terms( 'category' ),
+	'placeholder'	=> esc_attr__( 'Select a category', 'kontrast' ),
 ) );
 // Blog: Featured Post Count
 Kirki::add_field( 'alx_kontrast', array(
@@ -568,7 +569,7 @@ Kirki::add_field( 'alx_kontrast', array(
 ) );
 
 
-function kirki_sidebars_select_example() { 
+function alx_kirki_sidebars_select() { 
  	$sidebars = array(); 
  	if ( isset( $GLOBALS['wp_registered_sidebars'] ) ) { 
  		$sidebars = $GLOBALS['wp_registered_sidebars']; 
@@ -589,6 +590,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -598,6 +600,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -607,6 +610,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -616,6 +620,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -625,6 +630,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -634,6 +640,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -643,6 +650,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -652,6 +660,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -661,6 +670,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -669,7 +679,8 @@ function kirki_sidebars_select_example() {
 		'description'	=> esc_attr__( '(is_search) Secondary', 'kontrast' ),
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
-		'default'		=> '',
+		'default'		=> '',	
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -679,6 +690,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -688,6 +700,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -697,6 +710,7 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	Kirki::add_field( 'alx_kontrast', array(
 		'type'			=> 'select',
@@ -706,10 +720,11 @@ function kirki_sidebars_select_example() {
 		'section'		=> 'sidebars',
 		'choices'		=> $sidebars_choices, 
 		'default'		=> '',
+		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
 	
  } 
-add_action( 'init', 'kirki_sidebars_select_example', 999 ); 
+add_action( 'init', 'alx_kirki_sidebars_select', 999 ); 
 
 // Social Links: List
 Kirki::add_field( 'alx_kontrast', array(
