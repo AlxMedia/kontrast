@@ -243,33 +243,17 @@ Kirki::add_field( 'alx_theme', array(
 	'section'		=> 'blog',
 	'default'		=> 'on',
 ) );
-// Blog: Single - Sharrre
-Kirki::add_field( 'alx_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'sharrre',
-	'label'			=> esc_attr__( 'Single - Share Bar', 'kontrast' ),
-	'description'	=> esc_attr__( 'Social sharing buttons for each article', 'kontrast' ),
-	'section'		=> 'blog',
-	'default'		=> 'on',
-) );
-// Blog: Single - Sharrre Sticky
-Kirki::add_field( 'alx_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'sharrre-scrollable',
-	'label'			=> esc_attr__( 'Single - Scrollable Share Bar', 'kontrast' ),
-	'description'	=> esc_attr__( 'Make social links stick to browser window when scrolling down', 'kontrast' ),
-	'section'		=> 'blog',
-	'default'		=> 'off',
-) );
-// Blog: Twitter Username
-Kirki::add_field( 'alx_theme', array(
-	'type'			=> 'text',
-	'settings'		=> 'twitter-username',
-	'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'kontrast' ),
-	'description'	=> esc_attr__( 'Your @username will be added to share-tweets of your posts (optional)', 'kontrast' ),
-	'section'		=> 'blog',
-	'default'		=> '',
-) );
+if( function_exists( 'alx_ext_sharrre_template' ) ) { 
+	// Blog: Twitter Username
+	Kirki::add_field( 'alx_theme', array(
+		'type'			=> 'text',
+		'settings'		=> 'twitter-username',
+		'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'typecore' ),
+		'description'	=> esc_attr__( 'Your @username will be added to share-tweets of your posts (optional)', 'typecore' ),
+		'section'		=> 'blog',
+		'default'		=> '',
+	) ); 
+}
 // Blog: Single - Authorbox
 Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',
