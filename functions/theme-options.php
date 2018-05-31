@@ -248,8 +248,8 @@ if( function_exists( 'alx_ext_sharrre_template' ) ) {
 	Kirki::add_field( 'alx_theme', array(
 		'type'			=> 'text',
 		'settings'		=> 'twitter-username',
-		'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'typecore' ),
-		'description'	=> esc_attr__( 'Your @username will be added to share-tweets of your posts (optional)', 'typecore' ),
+		'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'kontrast' ),
+		'description'	=> esc_attr__( 'Your @username will be added to share-tweets of your posts (optional)', 'kontrast' ),
 		'section'		=> 'blog',
 		'default'		=> '',
 	) ); 
