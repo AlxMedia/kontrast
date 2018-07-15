@@ -162,8 +162,8 @@
 	.site-title { padding: 10px 0 20px; width: 100%; float: none; line-height: 50px; }
 	.site-title a { text-align: center; }
 	#header .social-links { float: none; text-align: center; border-top: 1px solid #eee; padding: 10px 0 0; }
-	#header .container-inner > .pad { padding-bottom: 10px; }
 	#header .social-links li { margin: 0 4px; }
+	#header .container-inner > .pad { padding-bottom: 10px; }
 	.toggle-search { right: auto; left: 0; top: 0; }
 	.search-expand { left: 0; right: auto; top: 42px; width: 100%; }
 	.search-expand-inner { border-left: 0; border-right: 0; }
