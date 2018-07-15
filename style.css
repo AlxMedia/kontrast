@@ -656,6 +656,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 }
 @media only screen and (max-width: 719px) {
 	.mobile-menu #header { padding-bottom: 0; }
+	.mobile-menu #header { border-bottom: 4px solid #222; margin-bottom: 4px; }
 	.mobile-menu #nav-topbar,
 	.mobile-menu #nav-header,
 	.mobile-menu #nav-subheader { display: none; } 
