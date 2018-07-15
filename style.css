@@ -606,37 +606,6 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 #nav-mobile .nav-toggle { background: transparent; color: #555; }
 #nav-mobile .nav-text { color: #555; }
 
-@media only screen and (min-width: 720px) {
-
-	/* common */
-	#nav-mobile .nav { font-weight: 300; }
-	#nav-mobile .nav li a { font-size: 15px; color: #555; border-bottom: 2px solid transparent; }	
-	/* level 1 */
-	#nav-mobile .nav > li { border-left: 1px solid #f9f9f9; border-right: none; }
-	#nav-mobile .nav > li > a { padding: 11px 14px 9px; }
-	#nav-mobile .nav > li > a:hover, 
-	#nav-mobile .nav > li:hover > a { background: transparent; border-bottom-color: #26abd3; }
-	#nav-mobile .nav li > a:hover, 
-	#nav-mobile .nav li:hover > a, 
-	#nav-mobile .nav li.current_page_item > a, 
-	#nav-mobile .nav li.current-menu-item > a,
-	#nav-mobile .nav li.current-menu-ancestor > a,
-	#nav-mobile .nav li.current-post-parent > a { color: #000; }
-	#nav-mobile .nav li.current_page_item > a, 
-	#nav-mobile .nav li.current-menu-item > a,
-	#nav-mobile .nav li.current-menu-ancestor > a,
-	#nav-mobile .nav li.current-post-parent > a { border-bottom-color: #e5e5e5; }
-	#nav-mobile .nav li.current_page_item:hover > a, 
-	#nav-mobile .nav li.current-menu-item:hover > a,
-	#nav-mobile .nav li.current-menu-ancestor:hover > a,
-	#nav-mobile .nav li.current-post-parent:hover > a { border-bottom-color: #26abd3; }
-	/* level 2 & 3 */
-	#nav-mobile .nav > li > ul { top: 42px; }
-	#nav-mobile .nav ul { background: #fff; }
-	#nav-mobile .nav ul li { border-bottom: 1px solid #f9f9f9; }
-	#nav-mobile .nav ul li:last-child { border-bottom: none; }
-	#nav-mobile .nav ul li a { font-size: 14px; border: none; }
-}
 @media only screen and (max-width: 719px) {
 	
 	/* common */
