@@ -179,6 +179,12 @@ a,
 	#nav-header .nav li.current-post-parent > a { color: '.esc_attr( get_theme_mod('color-1') ).'; }
 }
 
+#nav-mobile .nav > li > a:hover, 
+#nav-mobile .nav > li:hover > a,
+#nav-mobile .nav li.current_page_item:hover > a, 
+#nav-mobile .nav li.current-menu-item:hover > a,
+#nav-mobile .nav li.current-menu-ancestor:hover > a,
+#nav-mobile .nav li.current-post-parent:hover > a,
 #nav-topbar .nav > li > a:hover, 
 #nav-topbar .nav > li:hover > a,
 #nav-topbar .nav li.current_page_item:hover > a, 

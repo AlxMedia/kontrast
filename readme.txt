@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.1
+Version: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -42,11 +42,58 @@ Titillium font, Copyright Accademia di Belle Arti di Urbino
 License: SIL Open Font License, version 1.1.
 Source: http://www.campivisivi.net/titillium/
 
+Flexslider, Copyright WooThemes
+License: GPLv2 or later
+Source: http://flexslider.woothemes.com/
+
+FitVids, Copyright Chris Coyier
+License: WTFPL
+Source: http://fitvidsjs.com/
+
+HTML5 Shiv, Copyright Alexander Farkas
+License: GPLv2 or later
+Source: https://github.com/aFarkas/html5shiv
+
+Respond.js, Copyright Scott Jehl
+License: MIT / GPLv2 or later
+Source: https://github.com/scottjehl/Respond
+
+Selectivizr, Copyright Keith Clark
+License: MIT
+Source: http://selectivizr.com/
+
 Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
 Source: http://pixabay.com/
 
+Left sidebar images
+1. ID 351478 - https://pixabay.com/en/mixing-desk-mixer-slide-control-351478/ - CC0 1.0 Universal (CC0 1.0)
+2. ID 77552 - https://pixabay.com/en/motorcycle-zero-s-action-77552/ - CC0 1.0 Universal (CC0 1.0)
+3. ID 165040 - https://pixabay.com/en/orange-falling-water-splash-fresh-165040/ - CC0 1.0 Universal (CC0 1.0)
+4. ID 405864 - https://pixabay.com/en/skatepark-skateboarding-skateboard-405864/ - CC0 1.0 Universal (CC0 1.0)
+5. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
+6. ID 336376 - https://pixabay.com/en/blogging-blogger-office-business-336376/ - CC0 1.0 Universal (CC0 1.0)
+7. ID 930715 - https://pixabay.com/en/superbike-motorsport-fast-speed-930715/ - CC0 1.0 Universal (CC0 1.0)
+8. ID 122705 - https://pixabay.com/en/smile-laugh-girl-teeth-mouth-chin-122705/ - CC0 1.0 Universal (CC0 1.0)
+
+Content images
+1. ID 336376 - https://pixabay.com/en/blogging-blogger-office-business-336376/ - CC0 1.0 Universal (CC0 1.0)
+2. ID 351478 - https://pixabay.com/en/mixing-desk-mixer-slide-control-351478/ - CC0 1.0 Universal (CC0 1.0)
+3. ID 77552 - https://pixabay.com/en/motorcycle-zero-s-action-77552/ - CC0 1.0 Universal (CC0 1.0)
+
+Right sidebar images
+1. ID 53769 - https://pixabay.com/en/bridge-japanese-garden-arch-park-53769/ - CC0 1.0 Universal (CC0 1.0)
+2. ID 405864 - https://pixabay.com/en/skatepark-skateboarding-skateboard-405864/ - CC0 1.0 Universal (CC0 1.0)
+3. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
+
 == Changelog ==
+
+= 1.0.2 - 2018-07-15 =
+* Added screenshot images to readme
+* Added option for mobile menu
+* Added on/off option for header search button
+* Added on/off option for header social links
+* Added on/off option for footer social links
 
 = 1.0.1 - 2018-05-26 =
 * Numerous required fixes for wordpress.org
