@@ -606,13 +606,6 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 #nav-mobile .nav-toggle { background: transparent; color: #555; }
 #nav-mobile .nav-text { color: #555; }
 
-@media only screen and (min-width: 1025px) {
-	/* fixed nav */
-	.full-width.mobile-enabled #header { padding-top: 42px; }
-	.full-width #nav-mobile.nav-container { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; }
-	.full-width.admin-bar #nav-mobile.nav-container { top: 32px; }
-}
-
 @media only screen and (min-width: 720px) {
 
 	/* common */
