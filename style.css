@@ -1,7 +1,7 @@
 /*
 Theme Name: Kontrast
 Theme URI: http://alxmedia.se/themes/kontrast/
-Version: 1.0.2
+Version: 1.0.3
 Description: <a href="http://alxmedia.se/themes/kontrast/">Kontrast</a> is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 220px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured story or slider, 10 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -390,6 +390,36 @@ box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1); }
 
 /* sidebar secondary */
 .s2 { width: 260px; z-index: 1; }
+
+/*  base : primary sidebar light
+/* ------------------------------------ */
+.light-sidebar.col-2cl.s1-expand .s1,
+.light-sidebar.col-3cl.s1-expand .s1 { border-left: 1px solid #ddd; }
+.light-sidebar.col-2cr.s1-expand .s1,
+.light-sidebar.col-3cm.s1-expand .s1,
+.light-sidebar.col-3cr.s1-expand .s1 { border-right: 1px solid #ddd; }
+
+.light-sidebar.col-2cl .main-inner { background-image: url(img/sidebar/light/s-right-s1.png); }
+.light-sidebar.col-2cr .main-inner { background-image: url(img/sidebar/light/s-left.png); }
+.light-sidebar.col-3cm .main-inner { background-image: url(img/sidebar/light/s-left.png); }
+.light-sidebar.col-3cr .main-inner { background-image: url(img/sidebar/light/s-left-dual-full-expand.png); }
+.light-sidebar.col-3cl .main-inner { background-image: url(img/sidebar/light/s-right-dual-full-expand.png); }
+.light-sidebar.col-3cm .main { background-image: url(img/sidebar/s-right-s2.png); }
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+	.light-sidebar.col-3cr .main-inner { background-image: url(img/sidebar/light/s-left-dual-half-collapse.png); }
+	.light-sidebar.col-3cl .main-inner { background-image: url(img/sidebar/light/s-right-dual-half-collapse.png); }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+	.light-sidebar.col-2cr .main-inner { background-image: url(img/sidebar/s-left-collapse-s1.png); }
+	.light-sidebar.col-3cm .main-inner { background-image: url(img/sidebar/s-left-collapse-s1.png);}
+	.light-sidebar.col-3cr .main-inner { background-image: url(img/sidebar/s-left-dual-full-collapse.png); }
+	.light-sidebar.col-2cl .main-inner { background-image: url(img/sidebar/s-right-collapse-s1.png); }
+	.light-sidebar.col-3cl .main-inner { background-image: url(img/sidebar/s-right-dual-full-collapse.png); }
+}
+@media only screen and (min-width: 480px) and (max-width: 1200px) {
+	.light-sidebar.col-3cm .main { background-image: url(img/sidebar/s-right-collapse-s2.png); }
+}
 
 /*  base : grid
 /* ------------------------------------ */
@@ -1463,6 +1493,16 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 .child-menu > li ul ul a:hover,
 .child-menu > li ul ul li.current_page_item > a { background: #333; }
 
+/* sidebar light primary */
+.light-sidebar .child-menu a:hover,
+.light-sidebar .child-menu .current_page_item > a { color: #26abd3; }
+.light-sidebar .child-menu a { color: #222; }
+.light-sidebar .child-menu > li > a { border: 1px solid #eee; }
+.light-sidebar .child-menu > li > ul { border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.light-sidebar .child-menu > li > ul > li > a { border-bottom: 1px solid #eee; border-left: 1px solid #eee; border-right: 1px solid #eee; }
+.light-sidebar .child-menu > li ul ul { border-left: 10px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee; }
+.light-sidebar .child-menu > li ul ul a:hover,
+.light-sidebar .child-menu > li ul ul li.current_page_item > a { background: #eee; }
 
 /* ------------------------------------------------------------------------- *
  *  Plugins
@@ -1572,6 +1612,7 @@ box-shadow: inset 0 1px 0 rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.12),
   .flex-direction-nav .flex-prev { opacity: .7; right: 0; }
   .flex-direction-nav .flex-next { opacity: .7; right: 0; }
 }
+
 
 /* ------------------------------------------------------------------------- *
  *  Shortcodes

@@ -514,6 +514,7 @@ if ( ! function_exists( 'alx_body_class' ) ) {
 		$classes[] = alx_layout_class();
 		if ( get_theme_mod( 'boxed','off' ) != 'on' ) { $classes[] = 'full-width'; }
 		if ( get_theme_mod( 'boxed','off' ) == 'on' ) { $classes[] = 'boxed'; }
+		if ( get_theme_mod( 'light-sidebar','off' ) == 'on' ) { $classes[] = 'light-sidebar'; }
 		if ( has_nav_menu( 'topbar' ) ) { $classes[] = 'topbar-enabled'; }
 		if ( has_nav_menu( 'mobile' ) ) { $classes[] = 'mobile-menu'; }
 		if ( get_theme_mod( 'mobile-sidebar-hide','1' ) == 's1' ) { $classes[] = 'mobile-sidebar-hide-s1'; }

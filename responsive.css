@@ -73,6 +73,7 @@
 	/* s1 expand/collapse */
 	.s1-expand .s1 { background: #222; position: absolute; top: 0; bottom: 0; width: 340px; margin: 0!important; z-index: 9; overflow: auto;
 	-moz-transition: width .2s ease; -webkit-transition: width .2s ease; transition: width .2s ease; }	
+	.light-sidebar.s1-expand .s1 { background: #fff; }
 	.s1-expand .s1 .sidebar-content,
 	.s1-expand .s1 .post-nav { display: block; min-width: 340px; }
 	.s1-collapse .s1 .sidebar-content,
@@ -234,6 +235,7 @@
 	.sidebar { width: 100%; float: none; margin-right: 0!important; margin-left: 0!important; }
 	.sidebar { background: #fff; border-top: 1px solid #eee; width: 100%; display: block; float: none; }
 	.sidebar.s1 { background: #222; }
+	.light-sidebar .sidebar.s1 { background: #fff; }
 	.main,
 	.main-inner { background-image: none!important; padding: 0!important;  }
 	.s2 { right: 0!important; left: 0!important; }
@@ -260,4 +262,3 @@
 	.child-menu { padding: 0 15px; }
 
 }
-

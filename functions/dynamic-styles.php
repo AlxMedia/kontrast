@@ -144,6 +144,8 @@ a,
 .comment-awaiting-moderation,
 .child-menu a:hover,
 .child-menu .current_page_item > a,
+.light-sidebar .child-menu a:hover,
+.light-sidebar .child-menu .current_page_item > a,
 .wp-pagenavi a { color: '.esc_attr( get_theme_mod('color-1') ).'; }
 
 .themeform input[type="submit"],

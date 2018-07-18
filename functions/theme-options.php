@@ -792,6 +792,15 @@ Kirki::add_field( 'alx_theme', array(
 	'section'		=> 'styling',
 	'default'		=> 'on',
 ) );
+// Styling: Light Sidebar
+Kirki::add_field( 'alx_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'light-sidebar',
+	'label'			=> esc_attr__( 'Light Primary Sidebar', 'kontrast' ),
+	'description'	=> esc_attr__( 'Light colors for the primary sidebar', 'kontrast' ),
+	'section'		=> 'styling',
+	'default'		=> 'off',
+) );
 // Styling: Boxed Layout
 Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'switch',

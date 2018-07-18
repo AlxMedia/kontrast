@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.2
+Version: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
@@ -87,6 +87,9 @@ Right sidebar images
 3. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.0.3 - 2018-07-18 =
+* Added styling option for light primary sidebar
 
 = 1.0.2 - 2018-07-15 =
 * Added screenshot images to readme
