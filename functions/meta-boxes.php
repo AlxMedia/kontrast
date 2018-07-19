@@ -25,16 +25,6 @@ function kontrast_get_meta_box( $meta_boxes ) {
 		'autosave' => false,
 		'fields' => array(
 			array(
-				'id' => $prefix . 'heading',
-				'type' => 'text',
-				'name' => esc_html__( 'Heading', 'kontrast' ),
-			),
-			array(
-				'id' => $prefix . 'subheading',
-				'type' => 'text',
-				'name' => esc_html__( 'Subheading', 'kontrast' ),
-			),
-			array(
 				'id' => $prefix . 'sidebar_primary',
 				'name' => esc_html__( 'Primary Sidebar', 'kontrast' ),
 				'type' => 'select',
