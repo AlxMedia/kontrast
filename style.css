@@ -1287,10 +1287,6 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .s1 .alx-posts .post-item-category,
 .s1 .alx-posts .post-item-date { font-size: 14px; }
 
-/*  custom widget : alxvideo
-/* ------------------------------------ */
-.widget_alx_video h3 { margin-bottom: 14px; }
-
 
 /* ------------------------------------------------------------------------- *
  *  Sidebar Primary / Footer Widgets

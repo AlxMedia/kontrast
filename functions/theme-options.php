@@ -73,7 +73,7 @@ Kirki::add_section( 'styling', array(
 /* ------------------------------------ */
 
 // General: Custom CSS
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'custom',
 	'label'			=> esc_attr__( 'Custom Stylesheet', 'kontrast' ),
@@ -82,7 +82,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // General: Responsive Layout
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'responsive',
 	'label'			=> esc_attr__( 'Responsive Layout', 'kontrast' ),
@@ -91,7 +91,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // General: Mobile Sidebar
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'mobile-sidebar-hide',
 	'label'			=> esc_attr__( 'Mobile Sidebar Content', 'kontrast' ),
@@ -100,7 +100,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // General: Mobile Sidebar
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'mobile-sidebar-hide',
 	'label'			=> esc_attr__( 'Mobile Sidebar Content', 'kontrast' ),
@@ -115,7 +115,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // General: RSS Feed
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'rss-feed',
 	'label'			=> esc_attr__( 'FeedBurner URL', 'kontrast' ),
@@ -124,7 +124,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // General: Post Comments
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'post-comments',
 	'label'			=> esc_attr__( 'Post Comments', 'kontrast' ),
@@ -133,7 +133,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // General: Page Comments
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'page-comments',
 	'label'			=> esc_attr__( 'Page Comments', 'kontrast' ),
@@ -142,7 +142,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // General: Recommended Plugins
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'recommended-plugins',
 	'label'			=> esc_attr__( 'Recommended Plugins', 'kontrast' ),
@@ -151,7 +151,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Blog: Heading
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'blog-heading',
 	'label'			=> esc_attr__( 'Heading', 'kontrast' ),
@@ -160,7 +160,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Blog: Subheading
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'blog-subheading',
 	'label'			=> esc_attr__( 'Subheading', 'kontrast' ),
@@ -169,7 +169,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Blog: Excerpt Length
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'excerpt-length',
 	'label'			=> esc_attr__( 'Excerpt Length', 'kontrast' ),
@@ -183,7 +183,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Blog: Featured Posts Include
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'checkbox',
 	'settings'		=> 'featured-posts-include',
 	'label'			=> esc_attr__( 'Featured Posts', 'kontrast' ),
@@ -192,7 +192,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> false,
 ) );
 // Blog: Featured Category
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'select',
 	'settings'		=> 'featured-category',
 	'label'			=> esc_attr__( 'Featured Category', 'kontrast' ),
@@ -203,7 +203,7 @@ Kirki::add_field( 'alx_theme', array(
 	'placeholder'	=> esc_attr__( 'Select a category', 'kontrast' ),
 ) );
 // Blog: Featured Post Count
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'featured-posts-count',
 	'label'			=> esc_attr__( 'Featured Post Count', 'kontrast' ),
@@ -217,7 +217,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Blog: Standard
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'blog-standard',
 	'label'			=> esc_attr__( 'Standard Blog List', 'kontrast' ),
@@ -226,7 +226,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // Blog: Thumbnail Placeholder
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'placeholder',
 	'label'			=> esc_attr__( 'Thumbnail Placeholder', 'kontrast' ),
@@ -235,7 +235,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Blog: Thumbnail Comment Count
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'comment-count',
 	'label'			=> esc_attr__( 'Thumbnail Comment Count', 'kontrast' ),
@@ -245,7 +245,7 @@ Kirki::add_field( 'alx_theme', array(
 ) );
 if( function_exists( 'alx_ext_sharrre_template' ) ) { 
 	// Blog: Twitter Username
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'text',
 		'settings'		=> 'twitter-username',
 		'label'			=> esc_attr__( 'Single - Share Bar - Twitter Username', 'kontrast' ),
@@ -255,7 +255,7 @@ if( function_exists( 'alx_ext_sharrre_template' ) ) {
 	) ); 
 }
 // Blog: Single - Authorbox
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'author-bio',
 	'label'			=> esc_attr__( 'Single - Author Bio', 'kontrast' ),
@@ -264,7 +264,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Blog: Single - Related Posts
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'related-posts',
 	'label'			=> esc_attr__( 'Single - Related Posts', 'kontrast' ),
@@ -278,7 +278,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Blog: Single - Post Navigation
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'post-nav',
 	'label'			=> esc_attr__( 'Single - Post Navigation', 'kontrast' ),
@@ -293,7 +293,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Header: Ads
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'header-ads',
 	'label'			=> esc_attr__( 'Header Ads', 'kontrast' ),
@@ -302,7 +302,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // Header: Search
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'header-search',
 	'label'			=> esc_attr__( 'Header Search', 'kontrast' ),
@@ -311,7 +311,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Header: Social Links
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'header-social',
 	'label'			=> esc_attr__( 'Header Social Links', 'kontrast' ),
@@ -320,7 +320,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Header: Custom Logo
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'custom-logo',
 	'label'			=> esc_attr__( 'Custom Logo', 'kontrast' ),
@@ -329,7 +329,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Header: Site Description
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'site-description',
 	'label'			=> esc_attr__( 'Site Description', 'kontrast' ),
@@ -338,7 +338,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Header: Header Image
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'header-image',
 	'label'			=> esc_attr__( 'Header Image', 'kontrast' ),
@@ -347,7 +347,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Footer: Ads
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'footer-ads',
 	'label'			=> esc_attr__( 'Footer Ads', 'kontrast' ),
@@ -356,7 +356,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // Footer: Widget Columns
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'footer-widgets',
 	'label'			=> esc_attr__( 'Footer Widget Columns', 'kontrast' ),
@@ -372,7 +372,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Footer: Social Links
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'footer-social',
 	'label'			=> esc_attr__( 'Footer Social Links', 'kontrast' ),
@@ -381,7 +381,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Footer: Custom Logo
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'image',
 	'settings'		=> 'footer-logo',
 	'label'			=> esc_attr__( 'Footer Logo', 'kontrast' ),
@@ -390,7 +390,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Footer: Copyright
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'text',
 	'settings'		=> 'copyright',
 	'label'			=> esc_attr__( 'Footer Copyright', 'kontrast' ),
@@ -399,7 +399,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '',
 ) );
 // Footer: Credit
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'credit',
 	'label'			=> esc_attr__( 'Footer Credit', 'kontrast' ),
@@ -408,7 +408,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Layout: Global
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-global',
 	'label'			=> esc_attr__( 'Global Layout', 'kontrast' ),
@@ -425,7 +425,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Home
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-home',
 	'label'			=> esc_attr__( 'Home', 'kontrast' ),
@@ -443,7 +443,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Single
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-single',
 	'label'			=> esc_attr__( 'Single', 'kontrast' ),
@@ -461,7 +461,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Archive
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-archive',
 	'label'			=> esc_attr__( 'Archive', 'kontrast' ),
@@ -479,7 +479,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout : Archive - Category
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-archive-category',
 	'label'			=> esc_attr__( 'Archive - Category', 'kontrast' ),
@@ -497,7 +497,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Search
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-search',
 	'label'			=> esc_attr__( 'Search', 'kontrast' ),
@@ -515,7 +515,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Error 404
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-404',
 	'label'			=> esc_attr__( 'Error 404', 'kontrast' ),
@@ -533,7 +533,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Layout: Default Page
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio-image',
 	'settings'		=> 'layout-page',
 	'label'			=> esc_attr__( 'Default Page', 'kontrast' ),
@@ -551,7 +551,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Sidebars: Create Sidebars
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'repeater',
 	'label'			=> esc_attr__( 'Create Sidebars', 'kontrast' ),
 	'description'	=> esc_attr__( 'You must save and refresh the page to see your new sidebars.', 'kontrast' ),
@@ -580,7 +580,7 @@ Kirki::add_field( 'alx_theme', array(
 ) );
 
 
-function alx_kirki_sidebars_select() { 
+function kontrast_kirki_sidebars_select() { 
  	$sidebars = array(); 
  	if ( isset( $GLOBALS['wp_registered_sidebars'] ) ) { 
  		$sidebars = $GLOBALS['wp_registered_sidebars']; 
@@ -593,7 +593,7 @@ function alx_kirki_sidebars_select() {
  		return; 
  	}
 	// Sidebars: Select
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-home',
 		'label'			=> esc_attr__( 'Home', 'kontrast' ),
@@ -603,7 +603,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-home',
 		'label'			=> esc_attr__( 'Home', 'kontrast' ),
@@ -613,7 +613,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-single',
 		'label'			=> esc_attr__( 'Single', 'kontrast' ),
@@ -623,7 +623,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-single',
 		'label'			=> esc_attr__( 'Single', 'kontrast' ),
@@ -633,7 +633,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-archive',
 		'label'			=> esc_attr__( 'Archive', 'kontrast' ),
@@ -643,7 +643,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-archive',
 		'label'			=> esc_attr__( 'Archive', 'kontrast' ),
@@ -653,7 +653,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-archive-category',
 		'label'			=> esc_attr__( 'Archive - Category', 'kontrast' ),
@@ -663,7 +663,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-archive-category',
 		'label'			=> esc_attr__( 'Archive - Category', 'kontrast' ),
@@ -673,7 +673,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-search',
 		'label'			=> esc_attr__( 'Search', 'kontrast' ),
@@ -683,7 +683,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-search',
 		'label'			=> esc_attr__( 'Search', 'kontrast' ),
@@ -693,7 +693,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',	
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-404',
 		'label'			=> esc_attr__( 'Error 404', 'kontrast' ),
@@ -703,7 +703,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-404',
 		'label'			=> esc_attr__( 'Error 404', 'kontrast' ),
@@ -713,7 +713,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's1-page',
 		'label'			=> esc_attr__( 'Default Page', 'kontrast' ),
@@ -723,7 +723,7 @@ function alx_kirki_sidebars_select() {
 		'default'		=> '',
 		'placeholder'	=> esc_attr__( 'Select a sidebar', 'kontrast' ),
 	) );
-	Kirki::add_field( 'alx_theme', array(
+	Kirki::add_field( 'kontrast_theme', array(
 		'type'			=> 'select',
 		'settings'		=> 's2-page',
 		'label'			=> esc_attr__( 'Default Page', 'kontrast' ),
@@ -735,10 +735,10 @@ function alx_kirki_sidebars_select() {
 	) );
 	
  } 
-add_action( 'init', 'alx_kirki_sidebars_select', 999 ); 
+add_action( 'init', 'kontrast_kirki_sidebars_select', 999 ); 
 
 // Social Links: List
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'repeater',
 	'label'			=> esc_attr__( 'Create Social Links', 'kontrast' ),
 	'description'	=> esc_attr__( 'Create and organize your social links', 'kontrast' ),
@@ -784,7 +784,7 @@ Kirki::add_field( 'alx_theme', array(
 	)
 ) );
 // Styling: Enable
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'dynamic-styles',
 	'label'			=> esc_attr__( 'Dynamic Styles', 'kontrast' ),
@@ -793,7 +793,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // Styling: Light Sidebar
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'light-sidebar',
 	'label'			=> esc_attr__( 'Light Primary Sidebar', 'kontrast' ),
@@ -802,7 +802,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // Styling: Boxed Layout
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'boxed',
 	'label'			=> esc_attr__( 'Boxed Layout', 'kontrast' ),
@@ -811,7 +811,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'off',
 ) );
 // Styling: Font
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'select',
 	'settings'		=> 'font',
 	'label'			=> esc_attr__( 'Font', 'kontrast' ),
@@ -846,7 +846,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Styling: Container Width
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'container-width',
 	'label'			=> esc_attr__( 'Website Max-width', 'kontrast' ),
@@ -860,7 +860,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Styling: Sidebar Width
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'sidebar-padding',
 	'label'			=> esc_attr__( 'Sidebar Width', 'kontrast' ),
@@ -873,7 +873,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Styling: Primary Color
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-1',
 	'label'			=> esc_attr__( 'Primary Color', 'kontrast' ),
@@ -882,7 +882,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '#26abd3',
 ) );
 // Styling: Comments Bubble
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-bubble',
 	'label'			=> esc_attr__( 'Comments Bubble', 'kontrast' ),
@@ -891,7 +891,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '#dd5827',
 ) );
 // Styling: Footer Menu Background
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-footer-menu',
 	'label'			=> esc_attr__( 'Footer Menu Background', 'kontrast' ),
@@ -900,7 +900,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '#333333',
 ) );
 // Styling: Footer Background
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-footer',
 	'label'			=> esc_attr__( 'Footer Background', 'kontrast' ),
@@ -909,7 +909,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> '#222222',
 ) );
 // Styling: Header Logo Max-height
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'logo-max-height',
 	'label'			=> esc_attr__( 'Header Logo Image Max-height', 'kontrast' ),
@@ -923,7 +923,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Styling: Image Border Radius
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'image-border-radius',
 	'label'			=> esc_attr__( 'Image Border Radius', 'kontrast' ),
@@ -937,7 +937,7 @@ Kirki::add_field( 'alx_theme', array(
 	),
 ) );
 // Styling: Body Background
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'background',
 	'settings'		=> 'body-background',
 	'label'			=> esc_attr__( 'Body Background', 'kontrast' ),

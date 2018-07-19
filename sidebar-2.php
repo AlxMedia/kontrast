@@ -1,4 +1,4 @@
-<?php $sidebar = alx_sidebar_secondary(); ?>
+<?php $sidebar = kontrast_sidebar_secondary(); ?>
 
 <div class="sidebar s2">
 	

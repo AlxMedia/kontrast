@@ -1,6 +1,6 @@
 <?php 
-	$sidebar = alx_sidebar_primary();
-	$layout = alx_layout_class();
+	$sidebar = kontrast_sidebar_primary();
+	$layout = kontrast_layout_class();
 	if ( $layout != 'col-1c'):
 ?>
 

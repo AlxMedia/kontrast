@@ -1,4 +1,4 @@
-<?php $related = alx_related_posts(); ?>
+<?php $related = kontrast_related_posts(); ?>
 
 <?php if ( $related->have_posts() ): ?>
 

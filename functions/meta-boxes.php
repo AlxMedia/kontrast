@@ -1,5 +1,5 @@
 <?php
-function alx_get_meta_box( $meta_boxes ) {
+function kontrast_get_meta_box( $meta_boxes ) {
 	
 	/* do not show */
 	$prefix = '_';
@@ -151,4 +151,4 @@ function alx_get_meta_box( $meta_boxes ) {
 	
 	return $meta_boxes;
 }
-add_filter( 'rwmb_meta_boxes', 'alx_get_meta_box' );
+add_filter( 'rwmb_meta_boxes', 'kontrast_get_meta_box' );
