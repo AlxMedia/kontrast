@@ -69,20 +69,25 @@
 		<?php endif; ?>
 		
 		<div class="container-inner group">
-
-			<?php if ( get_theme_mod('header-image') == '' ): ?>
+			
+			<?php if ( get_header_image() == '' ) : ?>
 			<div class="group pad">
 				<?php echo kontrast_site_title(); ?>
-				<?php if ( get_theme_mod( 'site-description', 'on' ) == 'on' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
+				 <?php if ( display_header_text() == true ): ?>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				<?php endif; ?>
 				<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
 					<?php kontrast_social_links() ; ?>
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<?php if ( get_theme_mod('header-image','') ): ?>
-				<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">
-					<img class="site-image" src="<?php echo esc_url( get_theme_mod('header-image') ); ?>" alt="<?php get_bloginfo('name'); ?>">
-				</a>
+			
+			<?php if ( get_header_image() ) : ?>
+				<div class="site-header">
+					<a href="<?php echo esc_url( home_url('/') ); ?>" rel="home">
+						<img class="site-image" src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+					</a>
+				</div>
 			<?php endif; ?>
 
 			<?php if ( has_nav_menu('header') ): ?>
