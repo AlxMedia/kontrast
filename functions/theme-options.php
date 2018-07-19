@@ -114,15 +114,6 @@ Kirki::add_field( 'kontrast_theme', array(
 		's1-s2'		=> esc_attr__( 'Hide both sidebars', 'kontrast' ),
 	),
 ) );
-// General: RSS Feed
-Kirki::add_field( 'kontrast_theme', array(
-	'type'			=> 'text',
-	'settings'		=> 'rss-feed',
-	'label'			=> esc_attr__( 'FeedBurner URL', 'kontrast' ),
-	'description'	=> esc_attr__( 'Enter your full FeedBurner URL (or any other preferred feed URL) if you wish to use FeedBurner over the standard WordPress feed e.g. http://feeds.feedburner.com/yoururlhere', 'kontrast' ),
-	'section'		=> 'general',
-	'default'		=> '',
-) );
 // General: Post Comments
 Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
