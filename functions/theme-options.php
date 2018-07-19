@@ -15,7 +15,6 @@ Kirki::add_config( 'kontrast', array(
 Kirki::add_panel( 'options', array(
     'priority'    => 10,
     'title'       => esc_attr__( 'Theme Options', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 ) );
 
 /*  Add Sections
@@ -23,49 +22,41 @@ Kirki::add_panel( 'options', array(
 Kirki::add_section( 'general', array(
     'priority'    => 10,
     'title'       => esc_attr__( 'General', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'blog', array(
     'priority'    => 20,
     'title'       => esc_attr__( 'Blog', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'header', array(
     'priority'    => 30,
     'title'       => esc_attr__( 'Header', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'footer', array(
     'priority'    => 40,
     'title'       => esc_attr__( 'Footer', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'layout', array(
     'priority'    => 50,
     'title'       => esc_attr__( 'Layout', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'sidebars', array(
     'priority'    => 60,
     'title'       => esc_attr__( 'Sidebars', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'social', array(
     'priority'    => 70,
     'title'       => esc_attr__( 'Social Links', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 Kirki::add_section( 'styling', array(
     'priority'    => 80,
     'title'       => esc_attr__( 'Styling', 'kontrast' ),
-    'description' => esc_attr__( '', 'kontrast' ),
 	'panel'       => 'options',
 ) );
 
@@ -724,7 +715,6 @@ Kirki::add_field( 'kontrast_theme', array(
 		'social-target'	=> array(
 			'type'			=> 'checkbox',
 			'label'			=> esc_attr__( 'Open in new window', 'kontrast' ),
-			'description'	=> esc_attr__( '', 'kontrast' ),
 			'default'		=> false,
 		),
 	)
@@ -810,7 +800,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'sidebar-padding',
 	'label'			=> esc_attr__( 'Sidebar Width', 'kontrast' ),
-	'description'	=> esc_attr__( '', 'kontrast' ),
 	'section'		=> 'styling',
 	'default'		=> '30',
 	'choices'		=> array(
@@ -823,7 +812,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-1',
 	'label'			=> esc_attr__( 'Primary Color', 'kontrast' ),
-	'description'	=> esc_attr__( '', 'kontrast' ),
 	'section'		=> 'styling',
 	'default'		=> '#26abd3',
 ) );
@@ -832,7 +820,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-bubble',
 	'label'			=> esc_attr__( 'Comments Bubble', 'kontrast' ),
-	'description'	=> esc_attr__( '', 'kontrast' ),
 	'section'		=> 'styling',
 	'default'		=> '#dd5827',
 ) );
@@ -841,7 +828,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-footer-menu',
 	'label'			=> esc_attr__( 'Footer Menu Background', 'kontrast' ),
-	'description'	=> esc_attr__( '', 'kontrast' ),
 	'section'		=> 'styling',
 	'default'		=> '#333333',
 ) );
@@ -850,7 +836,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',
 	'settings'		=> 'color-footer',
 	'label'			=> esc_attr__( 'Footer Background', 'kontrast' ),
-	'description'	=> esc_attr__( '', 'kontrast' ),
 	'section'		=> 'styling',
 	'default'		=> '#222222',
 ) );
