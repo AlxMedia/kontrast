@@ -1,22 +1,22 @@
 <?php
 /*
-	AlxPosts Widget
+	KontrastPosts Widget
 	
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	
 	Copyright: (c) 2013 Alexander "Alx" Agnarson - http://alxmedia.se
 	
-		@package AlxPosts
+		@package KontrastPosts
 		@version 1.0
 */
 
-class AlxPosts extends WP_Widget {
+class KontrastPosts extends WP_Widget {
 
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, 'AlxPosts', array('description' => 'Display posts from a category', 'classname' => 'widget_kontrast_posts') );;	
+		parent::__construct( false, 'Kontrast Posts', array('description' => 'Display posts from a category', 'classname' => 'widget_kontrast_posts') );;	
 	}
 	
 /*  Widget
@@ -190,7 +190,7 @@ class AlxPosts extends WP_Widget {
 if ( ! function_exists( 'kontrast_register_widget_posts' ) ) {
 
 	function kontrast_register_widget_posts() { 
-		register_widget( 'AlxPosts' );
+		register_widget( 'KontrastPosts' );
 	}
 	
 }
