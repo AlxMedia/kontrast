@@ -11,7 +11,7 @@
 				<div class="post-inner group">
 					
 					<h1 class="post-title"><?php the_title(); ?></h1>
-					<p class="post-byline"><?php esc_html_e('by','kontrast'); ?> <?php the_author_posts_link(); ?> &middot; <?php the_time(get_option('date_format')); ?></p>
+					<p class="post-byline"><?php esc_html_e('by','kontrast'); ?> <?php the_author_posts_link(); ?> &middot; <?php the_time( get_option('date_format') ); ?></p>
 					
 					<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
 					
