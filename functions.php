@@ -190,7 +190,6 @@ if ( ! function_exists( 'kontrast_styles' ) ) {
 	function kontrast_styles() {
 		wp_enqueue_style( 'kontrast-style', get_stylesheet_uri() );
 		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'kontrast-responsive', get_template_directory_uri().'/responsive.css' ); }
-		if ( get_theme_mod('custom','off') == 'on' ) { wp_enqueue_style( 'kontrast-custom', get_template_directory_uri().'/custom.css' ); }
 		wp_enqueue_style( 'kontrast-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
 	}
 	
