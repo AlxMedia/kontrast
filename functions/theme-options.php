@@ -74,15 +74,6 @@ Kirki::add_field( 'kontrast_theme', array(
 ) );
 // General: Mobile Sidebar
 Kirki::add_field( 'kontrast_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'mobile-sidebar-hide',
-	'label'			=> esc_attr__( 'Mobile Sidebar Content', 'kontrast' ),
-	'description'	=> esc_attr__( 'Sidebar content on low-resolution mobile devices (320px)', 'kontrast' ),
-	'section'		=> 'general',
-	'default'		=> 'on',
-) );
-// General: Mobile Sidebar
-Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'radio',
 	'settings'		=> 'mobile-sidebar-hide',
 	'label'			=> esc_attr__( 'Mobile Sidebar Content', 'kontrast' ),
