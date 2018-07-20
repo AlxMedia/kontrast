@@ -16,7 +16,7 @@ class KontrastTabs extends WP_Widget {
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, 'Kontrast Tabs', array('description' => 'List posts, comments, and/or tags with or without tabs.', 'classname' => 'widget_kontrast_tabs') );;	
+		parent::__construct( false, 'Alx Tabs', array('description' => 'List posts, comments, and/or tags with or without tabs.', 'classname' => 'widget_kontrast_tabs') );;	
 	}
 	
 	public function kontrast_get_defaults() {

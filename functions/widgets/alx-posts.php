@@ -16,7 +16,7 @@ class KontrastPosts extends WP_Widget {
 /*  Constructor
 /* ------------------------------------ */
 	function __construct() {
-		parent::__construct( false, 'Kontrast Posts', array('description' => 'Display posts from a category', 'classname' => 'widget_kontrast_posts') );;	
+		parent::__construct( false, 'Alx Posts', array('description' => 'Display posts from a category', 'classname' => 'widget_kontrast_posts') );;	
 	}
 	
 	public function kontrast_get_defaults() {
