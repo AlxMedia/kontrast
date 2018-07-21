@@ -88,7 +88,7 @@ Kirki::add_field( 'kontrast_theme', array(
 	),
 ) );
 // General: Post Comments
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'post-comments',
 	'label'			=> esc_attr__( 'Post Comments', 'kontrast' ),
@@ -97,7 +97,7 @@ Kirki::add_field( 'alx_theme', array(
 	'default'		=> 'on',
 ) );
 // General: Page Comments
-Kirki::add_field( 'alx_theme', array(
+Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'page-comments',
 	'label'			=> esc_attr__( 'Page Comments', 'kontrast' ),
