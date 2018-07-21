@@ -87,6 +87,24 @@ Kirki::add_field( 'kontrast_theme', array(
 		's1-s2'		=> esc_attr__( 'Hide both sidebars', 'kontrast' ),
 	),
 ) );
+// General: Post Comments
+Kirki::add_field( 'alx_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'post-comments',
+	'label'			=> esc_attr__( 'Post Comments', 'kontrast' ),
+	'description'	=> esc_attr__( 'Comments on posts', 'kontrast' ),
+	'section'		=> 'general',
+	'default'		=> 'on',
+) );
+// General: Page Comments
+Kirki::add_field( 'alx_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'page-comments',
+	'label'			=> esc_attr__( 'Page Comments', 'kontrast' ),
+	'description'	=> esc_attr__( 'Comments on pages', 'kontrast' ),
+	'section'		=> 'general',
+	'default'		=> 'off',
+) );
 // General: Recommended Plugins
 Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',
