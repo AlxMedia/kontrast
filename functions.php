@@ -578,7 +578,7 @@ add_filter( 'excerpt_more', 'kontrast_excerpt_more' );
 if ( ! function_exists( 'kontrast_excerpt_length' ) ) {
 
 	function kontrast_excerpt_length( $length ) {
-		return get_theme_mod('excerpt-length','34',$length);
+		return get_theme_mod('excerpt-length','34',esc_attr( $length) );
 	}
 	
 }
