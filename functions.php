@@ -146,7 +146,7 @@ if ( ! function_exists( 'kontrast_deregister' ) ) {
 	}
 	
 }
-add_action( 'wp_print_styles', 'kontrast_deregister', 100 );
+add_action( 'wp_enqueue_scripts', 'kontrast_deregister', 100 );
 
 
 /*  Register sidebars
