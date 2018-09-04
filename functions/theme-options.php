@@ -469,35 +469,6 @@ Kirki::add_field( 'kontrast_theme', array(
 		'col-3cr'	=> get_template_directory_uri() . '/functions/images/col-3cr.png',
 	),
 ) );
-// Sidebars: Create Sidebars
-Kirki::add_field( 'kontrast_theme', array(
-	'type'			=> 'repeater',
-	'label'			=> esc_html__( 'Create Sidebars', 'kontrast' ),
-	'description'	=> esc_html__( 'You must save and refresh the page to see your new sidebars.', 'kontrast' ),
-	'tooltip'		=> esc_html__( 'Make sure that you save and refresh the page if you can not see the sidebars you have created.', 'kontrast' ),
-	'section'		=> 'sidebars',
-	'row_label'		=> array(
-		'type'	=> 'text',
-		'value'	=> esc_html__('sidebar', 'kontrast' ),
-	),
-	'settings'		=> 'sidebar-areas',
-	'default'		=> '',
-	'fields'		=> array(
-		'title'	=> array(
-			'type'        => 'text',
-			'label'       => esc_html__( 'Sidebar Title', 'kontrast' ),
-			'description' => esc_html__( 'The widget box title', 'kontrast' ),
-			'default'     => '',
-		),
-		'id'	=> array(
-			'type'        => 'text',
-			'label'       => esc_html__( 'Sidebar ID', 'kontrast' ),
-			'description' => esc_html__( 'This ID must be unique', 'kontrast' ),
-			'default'     => 'sidebar-',
-		),
-	)
-) );
-
 
 function kontrast_kirki_sidebars_select() {
  	$sidebars = array();
