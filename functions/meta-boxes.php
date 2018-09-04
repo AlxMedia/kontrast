@@ -1,21 +1,21 @@
 <?php
 function kontrast_get_meta_box( $meta_boxes ) {
-	
+
 	/* do not show */
 	$prefix = '_';
-	
+
 	/* get sidebars */
-	$sidebars = array(); 
- 	if ( isset( $GLOBALS['wp_registered_sidebars'] ) ) { 
- 		$sidebars = $GLOBALS['wp_registered_sidebars']; 
- 	} 
- 	$sidebars_choices = array(); 
- 	foreach ( $sidebars as $sidebar ) { 
- 		$sidebars_choices[ $sidebar['id'] ] = $sidebar['name']; 
- 	} 
+	$sidebars = array();
+ 	if ( isset( $GLOBALS['wp_registered_sidebars'] ) ) {
+ 		$sidebars = $GLOBALS['wp_registered_sidebars'];
+ 	}
+ 	$sidebars_choices = array();
+ 	foreach ( $sidebars as $sidebar ) {
+ 		$sidebars_choices[ $sidebar['id'] ] = $sidebar['name'];
+ 	}
 
 /*  Page options
-/* ------------------------------------ */	
+/* ------------------------------------ */
 	$meta_boxes[] = array(
 		'id' => 'page-options',
 		'title' => esc_html__( 'Page Options', 'kontrast' ),
@@ -59,7 +59,7 @@ function kontrast_get_meta_box( $meta_boxes ) {
 	);
 
 /*  Post options
-/* ------------------------------------ */	
+/* ------------------------------------ */
 	$meta_boxes[] = array(
 		'id' => 'post-options',
 		'title' => esc_html__( 'Post Options', 'kontrast' ),
@@ -103,42 +103,7 @@ function kontrast_get_meta_box( $meta_boxes ) {
 		),
 	);
 
-/*  Format: audio
-/* ------------------------------------ */		
-	$meta_boxes[] = array(
-		'id' => 'format-audio',
-		'title' => esc_html__( 'Format: Audio', 'kontrast' ),
-		'post_types' => array( 'post' ),
-		'context' => 'advanced',
-		'priority' => 'high',
-		'autosave' => false,
-		'fields' => array(
-			array(
-				'id' => $prefix . 'audio_url',
-				'type' => 'text',
-				'name' => esc_html__( 'Audio URL', 'kontrast' ),
-			),
-		),
-	);
-
-/*  Format: video
-/* ------------------------------------ */
-	$meta_boxes[] = array(
-		'id' => 'format-video',
-		'title' => esc_html__( 'Format: Video', 'kontrast' ),
-		'post_types' => array( 'post' ),
-		'context' => 'advanced',
-		'priority' => 'high',
-		'autosave' => false,
-		'fields' => array(
-			array(
-				'id' => $prefix . 'video_url',
-				'type' => 'text',
-				'name' => esc_html__( 'Video URL', 'kontrast' ),
-			),
-		),
-	);
-	
 	return $meta_boxes;
 }
+
 add_filter( 'rwmb_meta_boxes', 'kontrast_get_meta_box' );
