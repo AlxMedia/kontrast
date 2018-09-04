@@ -2,45 +2,45 @@
 /* ------------------------------------------------------------------------- *
  *  Custom functions
 /* ------------------------------------------------------------------------- */
-	
+
 	// Use a child theme instead of placing custom functions here
 	// http://codex.wordpress.org/Child_Themes
 
-	
+
 /* ------------------------------------------------------------------------- *
  *  Load theme files
-/* ------------------------------------------------------------------------- */	
+/* ------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'kontrast_load' ) ) {
-	
+
 	function kontrast_load() {
 		// Load theme languages
 		load_theme_textdomain( 'kontrast', get_template_directory().'/languages' );
-		
+
 		// Load theme options and meta boxes
 		include( get_template_directory() . '/functions/kirki/kirki.php' );
 		include( get_template_directory() . '/functions/theme-options.php' );
 		include( get_template_directory() . '/functions/meta-boxes.php' );
-		
+
 		// Load custom widgets
 		include( get_template_directory() . '/functions/widgets/alx-tabs.php' );
 		include( get_template_directory() . '/functions/widgets/alx-posts.php' );
 
 		// Load dynamic styles
 		include( get_template_directory() . '/functions/dynamic-styles.php' );
-		
+
 		// Load TGM plugin activation
 		include( get_template_directory() . '/functions/class-tgm-plugin-activation.php' );
 	}
-	
+
 }
-add_action( 'after_setup_theme', 'kontrast_load' );	
+add_action( 'after_setup_theme', 'kontrast_load' );
 
 
 /* ------------------------------------------------------------------------- *
  *  Base functionality
 /* ------------------------------------------------------------------------- */
-	
+
 	// Content width
 	if ( !isset( $content_width ) ) { $content_width = 720; }
 
@@ -48,23 +48,26 @@ add_action( 'after_setup_theme', 'kontrast_load' );
 /*  Theme setup
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_setup' ) ) {
-	
+
 	function kontrast_setup() {
 		// Enable title tag
 		add_theme_support( 'title-tag' );
-		
+
 		// Enable automatic feed links
 		add_theme_support( 'automatic-feed-links' );
-		
+
 		// Enable featured image
 		add_theme_support( 'post-thumbnails' );
-		
+
 		// Enable post format support
 		add_theme_support( 'post-formats', array( 'audio', 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
-		
+
 		// Declare WooCommerce support
 		add_theme_support( 'woocommerce' );
-		
+
+		// Enable support for selective refresh of widgets in Customizer.
+		add_theme_support( 'customize-selective-refresh-widgets' );
+
 		// Thumbnail sizes
 		add_image_size( 'kontrast-small', 160, 160, true );
 		add_image_size( 'kontrast-standard', 320, 320, true );
@@ -73,14 +76,14 @@ if ( ! function_exists( 'kontrast_setup' ) ) {
 
 		// Custom menu areas
 		register_nav_menus( array(
-			'mobile' 	=> 'Mobile',
-			'topbar' 	=> 'Topbar',
-			'header' 	=> 'Header',
-			'subheader' => 'Subheader',
-			'footer' 	=> 'Footer',
+			'mobile' 	=> esc_html__( 'Mobile', 'kontrast' ),
+			'topbar' 	=> esc_html__( 'Topbar', 'kontrast' ),
+			'header' 	=> esc_html__( 'Header', 'kontrast' ),
+			'subheader' => esc_html__( 'Subheader', 'kontrast' ),
+			'footer' 	=> esc_html__( 'Footer', 'kontrast' ),
 		) );
 	}
-	
+
 }
 add_action( 'after_setup_theme', 'kontrast_setup' );
 
@@ -88,7 +91,7 @@ add_action( 'after_setup_theme', 'kontrast_setup' );
 /*  Custom logo
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_custom_logo' ) ) {
-	
+
 	function kontrast_custom_logo() {
 		$defaults = array(
 			'height'		=> 120,
@@ -100,14 +103,14 @@ if ( ! function_exists( 'kontrast_custom_logo' ) ) {
 		add_theme_support( 'custom-logo', $defaults );
 	}
 
-}	
+}
 add_action( 'after_setup_theme', 'kontrast_custom_logo' );
 
 
 /*  Custom header
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_custom_header' ) ) {
-	
+
 	function kontrast_custom_header() {
 		$args = array(
 			'default-image'	=> false,
@@ -119,7 +122,7 @@ if ( ! function_exists( 'kontrast_custom_header' ) ) {
 		);
 		add_theme_support( 'custom-header', $args );
 	}
-	
+
 }
 add_action( 'after_setup_theme', 'kontrast_custom_header' );
 
@@ -127,12 +130,12 @@ add_action( 'after_setup_theme', 'kontrast_custom_header' );
 /*  Custom background
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_custom_background' ) ) {
-	
+
 	function kontrast_custom_background() {
 		$args = array();
 		add_theme_support( 'custom-background', $args );
 	}
-	
+
 }
 add_action( 'after_setup_theme', 'kontrast_custom_background' );
 
@@ -140,59 +143,59 @@ add_action( 'after_setup_theme', 'kontrast_custom_background' );
 /*  Deregister
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_deregister' ) ) {
-	
+
 	function kontrast_deregister() {
 		wp_deregister_style( 'wp-pagenavi' );
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'kontrast_deregister', 100 );
 
 
 /*  Register sidebars
-/* ------------------------------------ */	
+/* ------------------------------------ */
 if ( ! function_exists( 'kontrast_sidebars' ) ) {
 
 	function kontrast_sidebars()	{
-		register_sidebar(array( 'name' => 'Primary','id' => 'primary','description' => "Normal full width sidebar", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-		register_sidebar(array( 'name' => 'Secondary','id' => 'secondary','description' => "Normal full width sidebar", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => 'Header Ads','id' => 'header-ads', 'description' => "Header ads area", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
-		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => 'Footer Ads','id' => 'footer-ads', 'description' => "Footer ads area", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => 'Footer 1','id' => 'footer-1', 'description' => "Widgetized footer", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => 'Footer 2','id' => 'footer-2', 'description' => "Widgetized footer", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => 'Footer 3','id' => 'footer-3', 'description' => "Widgetized footer", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => 'Footer 4','id' => 'footer-4', 'description' => "Widgetized footer", 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }	
+		register_sidebar(array( 'name' => esc_html__('Primary','kontrast'),'id' => 'primary','description' => esc_html__("Normal full width sidebar","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
+		register_sidebar(array( 'name' => esc_html__('Secondary','konstrast'),'id' => 'secondary','description' => esc_html__("Normal full width sidebar","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
+		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Header Ads','kontrast'),'id' => 'header-ads', 'description' => esc_html("Header ads area","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
+		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Footer Ads',"kontrast"),'id' => 'footer-ads', 'description' => esc_html__("Footer ads area","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => esc_html__('Footer 1','konstrast'),'id' => 'footer-1', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => esc_html__('Footer 2','konstrast'),'id' => 'footer-2', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => esc_html__('Footer 3','konstrast'),'id' => 'footer-3', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => esc_html__('Footer 4','konstrast'),'id' => 'footer-4', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
 	}
-	
+
 }
 add_action( 'widgets_init', 'kontrast_sidebars' );
 
 
 /*  Enqueue javascript
-/* ------------------------------------ */	
+/* ------------------------------------ */
 if ( ! function_exists( 'kontrast_scripts' ) ) {
-	
+
 	function kontrast_scripts() {
 		wp_enqueue_script( 'kontrast-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
 		wp_enqueue_script( 'kontrast-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ),'', true );
 		wp_enqueue_script( 'kontrast-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
 		if ( is_singular() && get_option( 'thread_comments' ) )	{ wp_enqueue_script( 'comment-reply' ); }
-	}  
-	
+	}
+
 }
-add_action( 'wp_enqueue_scripts', 'kontrast_scripts' ); 
+add_action( 'wp_enqueue_scripts', 'kontrast_scripts' );
 
 
 /*  Enqueue css
-/* ------------------------------------ */	
+/* ------------------------------------ */
 if ( ! function_exists( 'kontrast_styles' ) ) {
-	
+
 	function kontrast_styles() {
 		wp_enqueue_style( 'kontrast-style', get_stylesheet_uri() );
 		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'kontrast-responsive', get_template_directory_uri().'/responsive.css' ); }
 		wp_enqueue_style( 'kontrast-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'kontrast_styles' );
 
@@ -203,9 +206,9 @@ if ( ! function_exists( 'kontrast_custom_sidebars' ) ) {
 
 	function kontrast_custom_sidebars() {
 		if ( !get_theme_mod('sidebar-areas') =='' ) {
-			
+
 			$sidebars = get_theme_mod('sidebar-areas', array());
-			
+
 			if ( !empty( $sidebars ) ) {
 				foreach( $sidebars as $sidebar ) {
 					if ( isset($sidebar['title']) && !empty($sidebar['title']) && isset($sidebar['id']) && !empty($sidebar['id']) && ($sidebar['id'] !='sidebar-') ) {
@@ -215,19 +218,19 @@ if ( ! function_exists( 'kontrast_custom_sidebars' ) ) {
 			}
 		}
 	}
-	
+
 }
 add_action( 'widgets_init', 'kontrast_custom_sidebars' );
 
 
 /* ------------------------------------------------------------------------- *
  *  Template functions
-/* ------------------------------------------------------------------------- */	
+/* ------------------------------------------------------------------------- */
 
 /*  Layout class
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_layout_class' ) ) {
-	
+
 	function kontrast_layout_class() {
 		// Default layout
 		$layout = 'col-3cm';
@@ -248,28 +251,28 @@ if ( ! function_exists( 'kontrast_layout_class' ) ) {
 			// Else get global option
 			else $layout = get_theme_mod('layout-global',''.$default.'');
 		}
-		
+
 		// Set layout based on page
 		elseif ( is_home() && ( get_theme_mod('layout-home') !='inherit' ) ) $layout = get_theme_mod('layout-home',''.$default.'');
 		elseif ( is_category() && ( get_theme_mod('layout-archive-category') !='inherit' ) ) $layout = get_theme_mod('layout-archive-category',''.$default.'');
 		elseif ( is_archive() && ( get_theme_mod('layout-archive') !='inherit' ) ) $layout = get_theme_mod('layout-archive',''.$default.'');
 		elseif ( is_search() && ( get_theme_mod('layout-search') !='inherit' ) ) $layout = get_theme_mod('layout-search',''.$default.'');
 		elseif ( is_404() && ( get_theme_mod('layout-404') !='inherit' ) ) $layout = get_theme_mod('layout-404',''.$default.'');
-		
+
 		// Global option
 		else $layout = get_theme_mod('layout-global',''.$default.'');
-		
+
 		// Return layout class
-		return $layout;
+		return esc_attr( $layout );
 	}
-	
+
 }
 
 
 /*  Dynamic sidebar primary
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_sidebar_primary' ) ) {
-	
+
 	function kontrast_sidebar_primary() {
 		// Default sidebar
 		$sidebar = 'primary';
@@ -294,9 +297,9 @@ if ( ! function_exists( 'kontrast_sidebar_primary' ) ) {
 		}
 
 		// Return sidebar
-		return $sidebar;
+		return esc_attr( $sidebar );
 	}
-	
+
 }
 
 
@@ -328,9 +331,9 @@ if ( ! function_exists( 'kontrast_sidebar_secondary' ) ) {
 		}
 
 		// Return sidebar
-		return $sidebar;
+		return esc_attr( $sidebar );
 	}
-	
+
 }
 
 
@@ -342,21 +345,21 @@ if ( ! function_exists( 'kontrast_social_links' ) ) {
 		if ( !get_theme_mod('social-links') =='' ) {
 			$links = get_theme_mod('social-links', array());
 			if ( !empty( $links ) ) {
-				echo '<ul class="social-links">';	
+				echo '<ul class="social-links">';
 				foreach( $links as $item ) {
-					
+
 					// Build each separate html-section only if set
-					if ( isset($item['social-title']) && !empty($item['social-title']) ) 
+					if ( isset($item['social-title']) && !empty($item['social-title']) )
 						{ $title = 'title="' .esc_attr( $item['social-title'] ). '"'; } else $title = '';
-					if ( isset($item['social-link']) && !empty($item['social-link']) ) 
+					if ( isset($item['social-link']) && !empty($item['social-link']) )
 						{ $link = 'href="' .esc_url( $item['social-link'] ). '"'; } else $link = '';
-					if ( isset($item['social-target']) && !empty($item['social-target']) ) 
+					if ( isset($item['social-target']) && !empty($item['social-target']) )
 						{ $target = 'target="_blank"'; } else $target = '';
-					if ( isset($item['social-icon']) && !empty($item['social-icon']) ) 
+					if ( isset($item['social-icon']) && !empty($item['social-icon']) )
 						{ $icon = 'class="fa ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
-					if ( isset($item['social-color']) && !empty($item['social-color']) ) 
+					if ( isset($item['social-color']) && !empty($item['social-color']) )
 						{ $color = 'style="color: ' .esc_attr( $item['social-color'] ). ';"'; } else $color = '';
-					
+
 					// Put them together
 					if ( isset($item['social-title']) && !empty($item['social-title']) && isset($item['social-icon']) && !empty($item['social-icon']) && ($item['social-icon'] !='fa-') ) {
 						echo '<li><a rel="nofollow" class="social-tooltip" '.$title.' '.$link.' '.$target.'><i '.$icon.' '.$color.'></i></a></li>';
@@ -366,7 +369,7 @@ if ( ! function_exists( 'kontrast_social_links' ) ) {
 			}
 		}
 	}
-	
+
 }
 
 
@@ -375,28 +378,28 @@ if ( ! function_exists( 'kontrast_social_links' ) ) {
 if ( ! function_exists( 'kontrast_site_title' ) ) {
 
 	function kontrast_site_title() {
-		
+
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
 		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-		
+
 		// Text or image?
 		if ( has_custom_logo() ) {
-			$logo = '<img src="'. esc_url( $logo[0] ) .'" alt="'.get_bloginfo('name').'">';
+			$logo = '<img src="'. esc_url( $logo[0] ) .'" alt="'.esc_attr( get_bloginfo('name')).'">';
 		} else {
-			$logo = get_bloginfo('name');
+			$logo = esc_html( get_bloginfo('name') );
 		}
-		
+
 		$link = '<a href="'.esc_url( home_url('/') ).'" rel="home">'.$logo.'</a>';
-		
+
 		if ( is_front_page() || is_home() ) {
 			$sitename = '<h1 class="site-title">'.$link.'</h1>'."\n";
 		} else {
 			$sitename = '<p class="site-title">'.$link.'</p>'."\n";
 		}
-		
+
 		return $sitename;
 	}
-	
+
 }
 
 
@@ -406,12 +409,12 @@ if ( ! function_exists( 'kontrast_blog_title' ) ) {
 
 	function kontrast_blog_title() {
 		global $post;
-		$heading = esc_attr( get_theme_mod('blog-heading') );
-		$subheading = esc_attr( get_theme_mod('blog-subheading') );
-		if($heading) { 
+		$heading = esc_html( get_theme_mod('blog-heading') );
+		$subheading = esc_html( get_theme_mod('blog-subheading') );
+		if($heading) {
 			$title = $heading;
 		} else {
-			$title = get_bloginfo('name');
+			$title = esc_html( get_bloginfo('name') );
 		}
 		if($subheading) {
 			$title = $title.' <span>'.$subheading.'</span>';
@@ -419,7 +422,7 @@ if ( ! function_exists( 'kontrast_blog_title' ) ) {
 
 		return $title;
 	}
-	
+
 }
 
 
@@ -443,9 +446,9 @@ if ( ! function_exists( 'kontrast_related_posts' ) ) {
 		);
 		// Related by categories
 		if ( get_theme_mod('related-posts') == 'categories' ) {
-			
+
 			$cats = get_post_meta($post->ID, 'related-cat', true);
-			
+
 			if ( !$cats ) {
 				$cats = wp_get_post_categories($post->ID, array('fields'=>'ids'));
 				$args['category__in'] = $cats;
@@ -455,9 +458,9 @@ if ( ! function_exists( 'kontrast_related_posts' ) ) {
 		}
 		// Related by tags
 		if ( get_theme_mod('related-posts') == 'tags' ) {
-		
+
 			$tags = get_post_meta($post->ID, 'related-tag', true);
-			
+
 			if ( !$tags ) {
 				$tags = wp_get_post_tags($post->ID, array('fields'=>'ids'));
 				$args['tag__in'] = $tags;
@@ -466,11 +469,11 @@ if ( ! function_exists( 'kontrast_related_posts' ) ) {
 			}
 			if ( !$tags ) { $break = true; }
 		}
-		
+
 		$query = !isset($break)?new WP_Query($args):new WP_Query;
 		return $query;
 	}
-	
+
 }
 
 
@@ -494,7 +497,7 @@ if ( ! function_exists( 'kontrast_post_images' ) ) {
 
 		return get_posts( $args );
 	}
-	
+
 }
 
 
@@ -504,8 +507,8 @@ if ( ! function_exists( 'kontrast_get_featured_post_ids' ) ) {
 
 	function kontrast_get_featured_post_ids() {
 		$args = array(
-			'category'		=> get_theme_mod('featured-category',''),
-			'numberposts'	=> get_theme_mod('featured-posts-count','3')
+			'category'		=> absint( get_theme_mod('featured-category','') ),
+			'numberposts'	=> absint( get_theme_mod('featured-posts-count','3')),
 		);
 		$posts = get_posts($args);
 		if ( !$posts ) return false;
@@ -513,13 +516,13 @@ if ( ! function_exists( 'kontrast_get_featured_post_ids' ) ) {
 			$ids[] = $post->ID;
 		return $ids;
 	}
-	
+
 }
 
 
 /* ------------------------------------------------------------------------- *
  *  Admin panel functions
-/* ------------------------------------------------------------------------- */		
+/* ------------------------------------------------------------------------- */
 
 /*  Post formats script
 /* ------------------------------------ */
@@ -531,7 +534,7 @@ if ( ! function_exists( 'kontrast_post_formats_script' ) ) {
 			return;
 		wp_enqueue_script('post-formats', get_template_directory_uri() . '/functions/js/post-formats.js', array( 'jquery' ));
 	}
-	
+
 }
 add_action( 'admin_enqueue_scripts', 'kontrast_post_formats_script');
 
@@ -556,7 +559,7 @@ if ( ! function_exists( 'kontrast_body_class' ) ) {
 		if ( get_theme_mod( 'mobile-sidebar-hide','1' ) == 's1-s2' ) { $classes[] = 'mobile-sidebar-hide'; }
 		return $classes;
 	}
-	
+
 }
 add_filter( 'body_class', 'kontrast_body_class' );
 
@@ -566,9 +569,12 @@ add_filter( 'body_class', 'kontrast_body_class' );
 if ( ! function_exists( 'kontrast_excerpt_more' ) ) {
 
 	function kontrast_excerpt_more( $more ) {
+		if ( is_admin() ) {
+			return $more;
+		}
 		return '&#46;&#46;&#46;';
 	}
-	
+
 }
 add_filter( 'excerpt_more', 'kontrast_excerpt_more' );
 
@@ -578,26 +584,35 @@ add_filter( 'excerpt_more', 'kontrast_excerpt_more' );
 if ( ! function_exists( 'kontrast_excerpt_length' ) ) {
 
 	function kontrast_excerpt_length( $length ) {
-		return get_theme_mod('excerpt-length','34',esc_attr( $length) );
+		if ( is_admin() ) {
+			return $length;
+		}
+
+		$new_length = $length;
+		$custom_length = get_theme_mod( 'excerpt-length', '34' );
+		if ( absint( $custom_length ) > 0 ) {
+			$new_length = absint( $custom_length );
+		}
+		return $new_length;
 	}
-	
+
 }
 add_filter( 'excerpt_length', 'kontrast_excerpt_length', 999 );
 
 
 /*  Add responsive container to embeds
-/* ------------------------------------ */	
+/* ------------------------------------ */
 if ( ! function_exists( 'kontrast_embed_html' ) ) {
 
 	function kontrast_embed_html( $html, $url ) {
-		
+
 		$pattern    = '/^https?:\/\/(www\.)?twitter\.com/';
 		$is_twitter = preg_match( $pattern, $url );
-		
+
 		if ( 1 === $is_twitter ) {
 			return $html;
 		}
-	
+
 		return '<div class="video-container">' . $html . '</div>';
 	}
 
@@ -606,7 +621,7 @@ add_filter( 'embed_oembed_html', 'kontrast_embed_html', 10, 3 );
 
 
 /*  Add responsive container to jetpack embeds
-/* ------------------------------------ */	
+/* ------------------------------------ */
 if ( ! function_exists( 'kontrast_embed_html_jp' ) ) {
 
 	function kontrast_embed_html_jp( $html ) {
@@ -635,14 +650,14 @@ if ( ! function_exists( 'kontrast_thumbnail_upscale' ) ) {
 
 		return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 	}
-	
+
 }
 add_filter( 'image_resize_dimensions', 'kontrast_thumbnail_upscale', 10, 6 );
 
 
 /* ------------------------------------------------------------------------- *
  *  Actions
-/* ------------------------------------------------------------------------- */	
+/* ------------------------------------------------------------------------- */
 
 /*  Include or exclude featured articles in loop
 /* ------------------------------------ */
@@ -663,7 +678,7 @@ if ( ! function_exists( 'kontrast_pre_get_posts' ) ) {
 			}
 		}
 	}
-	
+
 }
 add_action( 'pre_get_posts', 'kontrast_pre_get_posts' );
 
@@ -675,7 +690,7 @@ if ( ! function_exists( 'kontrast_html_js_class' ) ) {
 	function kontrast_html_js_class () {
 		echo '<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>'. "\n";
 	}
-	
+
 }
 add_action( 'wp_head', 'kontrast_html_js_class', 1 );
 
@@ -683,51 +698,36 @@ add_action( 'wp_head', 'kontrast_html_js_class', 1 );
 /*  TGM plugin activation
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_plugins' ) ) {
-	
-	function kontrast_plugins() {	
-		if ( get_theme_mod('recommended-plugins','on') =='on' ) { 	
-			// Add the following plugins
+
+	function kontrast_plugins() {
+		if ( get_theme_mod('recommended-plugins','on') =='on' ) {
+			// Add the following plugins.
 			$plugins = array(
 				array(
-					'name' 				=> 'Alx Extensions',
-					'slug' 				=> 'alx-extensions',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Alx Extensions', 'kontrast' ),
+					'slug' => 'alx-extensions',
 				),
 				array(
-					'name' 				=> 'Meta Box',
-					'slug' 				=> 'meta-box',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Meta Box', 'konstrast' ),
+					'slug' => 'meta-box',
 				),
 				array(
-					'name' 				=> 'Regenerate Thumbnails',
-					'slug' 				=> 'regenerate-thumbnails',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Regenerate Thumbnails', 'konstrast' ),
+					'slug' => 'regenerate-thumbnails',
 				),
 				array(
-					'name' 				=> 'WP-PageNavi',
-					'slug' 				=> 'wp-pagenavi',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'WP-PageNavi', 'konstrast' ),
+					'slug' => 'wp-pagenavi',
 				),
 				array(
-					'name' 				=> 'Responsive Lightbox',
-					'slug' 				=> 'responsive-lightbox',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Responsive Lightbox', 'konstrast' ),
+					'slug' => 'responsive-lightbox',
 				)
-			);	
+			);
 			tgmpa( $plugins );
 		}
 	}
-	
+
 }
 add_action( 'tgmpa_register', 'kontrast_plugins' );
 
@@ -751,26 +751,30 @@ add_action('woocommerce_after_main_content', 'kontrast_wc_wrapper_end', 10);
 /*  Admin panel css
 /* ------------------------------------ */
 function kontrast_admin_panel_css() {
-	echo '<style>
-.rwmb-image-select { width: auto!important; height: auto!important; }
-.rwmb-text { width: 100%; }
-	</style>';
+	global $pagenow;
+	if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
+		echo '<style>
+			.rwmb-image-select { width: auto!important; height: auto!important; }
+			.rwmb-text { width: 100%; }
+		</style>';
+	}
 }
+
 add_action('admin_head', 'kontrast_admin_panel_css');
 
 
 /* ------------------------------------------------------------------------- *
  *  Frontend scripts
-/* ------------------------------------------------------------------------- */	
+/* ------------------------------------------------------------------------- */
 
 /*  Flexslider featured
 /* ------------------------------------ */
 if ( ! function_exists( 'kontrast_flexslider_featured' ) ) {
-	
+
 	function kontrast_flexslider_featured() {
 
 		if( is_home() && !is_paged() && ( get_theme_mod('featured-posts-count','3') !='0') ) {
-			
+
 			$script = '
 			jQuery(document).ready(function(){
 				var firstImage = jQuery("#flexslider-featured").find("img").filter(":first"),
@@ -796,10 +800,10 @@ if ( ! function_exists( 'kontrast_flexslider_featured' ) ) {
 			';
 
 			wp_add_inline_script( 'kontrast-scripts', $script );
-			
+
 		}
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'kontrast_flexslider_featured' );
 
@@ -836,10 +840,10 @@ if ( ! function_exists( 'kontrast_flexslider_gallery' ) ) {
 			';
 
 			wp_add_inline_script( 'kontrast-scripts', $script );
-			
+
 		}
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'kontrast_flexslider_gallery' );
 
