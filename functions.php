@@ -409,12 +409,12 @@ if ( ! function_exists( 'kontrast_blog_title' ) ) {
 
 	function kontrast_blog_title() {
 		global $post;
-		$heading = esc_attr( get_theme_mod('blog-heading') );
-		$subheading = esc_attr( get_theme_mod('blog-subheading') );
+		$heading = esc_html( get_theme_mod('blog-heading') );
+		$subheading = esc_html( get_theme_mod('blog-subheading') );
 		if($heading) {
 			$title = $heading;
 		} else {
-			$title = get_bloginfo('name');
+			$title = esc_html( get_bloginfo('name') );
 		}
 		if($subheading) {
 			$title = $title.' <span>'.$subheading.'</span>';
@@ -701,42 +701,27 @@ if ( ! function_exists( 'kontrast_plugins' ) ) {
 
 	function kontrast_plugins() {
 		if ( get_theme_mod('recommended-plugins','on') =='on' ) {
-			// Add the following plugins
+			// Add the following plugins.
 			$plugins = array(
 				array(
-					'name' 				=> esc_html__( 'Alx Extensions', 'kontrast' ),
-					'slug' 				=> 'alx-extensions',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Alx Extensions', 'kontrast' ),
+					'slug' => 'alx-extensions',
 				),
 				array(
-					'name' 				=> esc_html__( 'Meta Box', 'konstrast' ),
-					'slug' 				=> 'meta-box',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Meta Box', 'konstrast' ),
+					'slug' => 'meta-box',
 				),
 				array(
-					'name' 				=> esc_html__( 'Regenerate Thumbnails', 'konstrast' ),
-					'slug' 				=> 'regenerate-thumbnails',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Regenerate Thumbnails', 'konstrast' ),
+					'slug' => 'regenerate-thumbnails',
 				),
 				array(
-					'name' 				=> esc_html__( 'WP-PageNavi', 'konstrast' ),
-					'slug' 				=> 'wp-pagenavi',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'WP-PageNavi', 'konstrast' ),
+					'slug' => 'wp-pagenavi',
 				),
 				array(
-					'name' 				=> esc_html__( 'Responsive Lightbox', 'konstrast' ),
-					'slug' 				=> 'responsive-lightbox',
-					'required'			=> false,
-					'force_activation' 	=> false,
-					'force_deactivation'=> false,
+					'name' => esc_html__( 'Responsive Lightbox', 'konstrast' ),
+					'slug' => 'responsive-lightbox',
 				)
 			);
 			tgmpa( $plugins );
@@ -766,11 +751,15 @@ add_action('woocommerce_after_main_content', 'kontrast_wc_wrapper_end', 10);
 /*  Admin panel css
 /* ------------------------------------ */
 function kontrast_admin_panel_css() {
-	echo '<style>
-.rwmb-image-select { width: auto!important; height: auto!important; }
-.rwmb-text { width: 100%; }
-	</style>';
+	global $pagenow;
+	if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
+		echo '<style>
+			.rwmb-image-select { width: auto!important; height: auto!important; }
+			.rwmb-text { width: 100%; }
+		</style>';
+	}
 }
+
 add_action('admin_head', 'kontrast_admin_panel_css');
 
 
