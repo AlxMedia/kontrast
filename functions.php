@@ -158,13 +158,13 @@ if ( ! function_exists( 'kontrast_sidebars' ) ) {
 
 	function kontrast_sidebars()	{
 		register_sidebar(array( 'name' => esc_html__('Primary','kontrast'),'id' => 'primary','description' => esc_html__("Normal full width sidebar","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-		register_sidebar(array( 'name' => esc_html__('Secondary','konstrast'),'id' => 'secondary','description' => esc_html__("Normal full width sidebar","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Header Ads','kontrast'),'id' => 'header-ads', 'description' => esc_html("Header ads area","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
-		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Footer Ads',"kontrast"),'id' => 'footer-ads', 'description' => esc_html__("Footer ads area","konstrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => esc_html__('Footer 1','konstrast'),'id' => 'footer-1', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => esc_html__('Footer 2','konstrast'),'id' => 'footer-2', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => esc_html__('Footer 3','konstrast'),'id' => 'footer-3', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => esc_html__('Footer 4','konstrast'),'id' => 'footer-4', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		register_sidebar(array( 'name' => esc_html__('Secondary','kontrast'),'id' => 'secondary','description' => esc_html__("Normal full width sidebar","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
+		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Header Ads','kontrast'),'id' => 'header-ads', 'description' => esc_html("Header ads area","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
+		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Footer Ads',"kontrast"),'id' => 'footer-ads', 'description' => esc_html__("Footer ads area","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3>','after_title' => '</h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => esc_html__('Footer 1','kontrast'),'id' => 'footer-1', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => esc_html__('Footer 2','kontrast'),'id' => 'footer-2', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => esc_html__('Footer 3','kontrast'),'id' => 'footer-3', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => esc_html__('Footer 4','kontrast'),'id' => 'footer-4', 'description' => esc_html__("Widgetized footer","kontrast"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
 	}
 
 }
@@ -708,19 +708,19 @@ if ( ! function_exists( 'kontrast_plugins' ) ) {
 					'slug' => 'alx-extensions',
 				),
 				array(
-					'name' => esc_html__( 'Meta Box', 'konstrast' ),
+					'name' => esc_html__( 'Meta Box', 'kontrast' ),
 					'slug' => 'meta-box',
 				),
 				array(
-					'name' => esc_html__( 'Regenerate Thumbnails', 'konstrast' ),
+					'name' => esc_html__( 'Regenerate Thumbnails', 'kontrast' ),
 					'slug' => 'regenerate-thumbnails',
 				),
 				array(
-					'name' => esc_html__( 'WP-PageNavi', 'konstrast' ),
+					'name' => esc_html__( 'WP-PageNavi', 'kontrast' ),
 					'slug' => 'wp-pagenavi',
 				),
 				array(
-					'name' => esc_html__( 'Responsive Lightbox', 'konstrast' ),
+					'name' => esc_html__( 'Responsive Lightbox', 'kontrast' ),
 					'slug' => 'responsive-lightbox',
 				)
 			);
