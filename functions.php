@@ -519,26 +519,6 @@ if ( ! function_exists( 'kontrast_get_featured_post_ids' ) ) {
 
 }
 
-
-/* ------------------------------------------------------------------------- *
- *  Admin panel functions
-/* ------------------------------------------------------------------------- */
-
-/*  Post formats script
-/* ------------------------------------ */
-if ( ! function_exists( 'kontrast_post_formats_script' ) ) {
-
-	function kontrast_post_formats_script( $hook ) {
-		// Only load on posts, pages
-		if ( !in_array($hook, array('post.php','post-new.php')) )
-			return;
-		wp_enqueue_script('post-formats', get_template_directory_uri() . '/functions/js/post-formats.js', array( 'jquery' ));
-	}
-
-}
-add_action( 'admin_enqueue_scripts', 'kontrast_post_formats_script');
-
-
 /* ------------------------------------------------------------------------- *
  *  Filters
 /* ------------------------------------------------------------------------- */
