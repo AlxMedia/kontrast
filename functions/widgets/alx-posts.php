@@ -72,7 +72,7 @@ class KontrastPosts extends WP_Widget {
 
 			<?php if($instance['posts_thumb']) { // Thumbnails enabled? ?>
 			<div class="post-item-thumbnail">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+				<a href="<?php the_permalink(); ?>">
 					<?php if ( has_post_thumbnail() ): ?>
 						<?php the_post_thumbnail('kontrast-medium'); ?>
 					<?php else: ?>
@@ -87,7 +87,7 @@ class KontrastPosts extends WP_Widget {
 
 			<div class="post-item-inner group">
 				<?php if($instance['posts_category']) { ?><p class="post-item-category"><?php the_category(' / '); ?></p><?php } ?>
-				<p class="post-item-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+				<p class="post-item-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></p>
 				<?php if($instance['posts_date']) { ?><p class="post-item-date"><?php the_time( get_option('date_format') ); ?></p><?php } ?>
 			</div>
 
