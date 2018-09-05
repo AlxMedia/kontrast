@@ -200,27 +200,6 @@ if ( ! function_exists( 'kontrast_styles' ) ) {
 add_action( 'wp_enqueue_scripts', 'kontrast_styles' );
 
 
-/*  Register custom sidebars
-/* ------------------------------------ */
-if ( ! function_exists( 'kontrast_custom_sidebars' ) ) {
-
-	function kontrast_custom_sidebars() {
-		if ( !get_theme_mod('sidebar-areas') =='' ) {
-
-			$sidebars = get_theme_mod('sidebar-areas', array());
-
-			if ( !empty( $sidebars ) ) {
-				foreach( $sidebars as $sidebar ) {
-					if ( isset($sidebar['title']) && !empty($sidebar['title']) && isset($sidebar['id']) && !empty($sidebar['id']) && ($sidebar['id'] !='sidebar-') ) {
-						register_sidebar(array('name' => ''.esc_attr( $sidebar['title'] ).'','id' => ''.esc_attr( strtolower($sidebar['id']) ).'','before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-					}
-				}
-			}
-		}
-	}
-
-}
-add_action( 'widgets_init', 'kontrast_custom_sidebars' );
 
 
 /* ------------------------------------------------------------------------- *
