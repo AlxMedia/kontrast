@@ -271,13 +271,13 @@ input, textarea, button, select, label { font-family: inherit; }
 
 /* default gallery */
 .entry .gallery,
-.sidebar .gallery { clear: both; overflow: hidden; width: 100%; margin: 15px 0!important; }
+.widget .gallery { clear: both; overflow: hidden; width: 100%; margin: 15px 0!important; }
 .entry .gallery img,
-.sidebar .gallery img { display: block; width: 100%; height: auto; border-width: 1px 2px!important; border-color: transparent!important; }
+.widget .gallery img { display: block; width: 100%; height: auto; border-width: 1px 2px!important; border-color: transparent!important; }
 .entry .gallery .gallery-item,
-.sidebar .gallery .gallery-item { position: relative; overflow: hidden; border-color: transparent; margin-top: 0!important; }
+.widget .gallery .gallery-item { position: relative; overflow: hidden; border-color: transparent; margin-top: 0!important; }
 .entry .gallery .gallery-caption,
-.sidebar .gallery .gallery-caption { background: rgba(255,255,255,0.8); color: #333; font-size: 13px; line-height: 1.4em; padding: 10px 0; text-align: left; text-indent: 10px; font-style: normal; margin: 0; bottom: -44px; left: 2px; right: 2px; overflow: hidden; position: absolute; text-overflow: ellipsis; white-space: nowrap; width: 100%;
+.widget .gallery .gallery-caption { background: rgba(255,255,255,0.8); color: #333; font-size: 13px; line-height: 1.4em; padding: 10px 0; text-align: left; text-indent: 10px; font-style: normal; margin: 0; bottom: -44px; left: 2px; right: 2px; overflow: hidden; position: absolute; text-overflow: ellipsis; white-space: nowrap; width: 100%;
 transition: all .2s ease;
 -o-transition: all .2s ease;
 -moz-transition: all .2s ease;
@@ -288,14 +288,14 @@ transition: all .2s ease;
 .entry .gallery-columns-7 .gallery-caption,
 .entry .gallery-columns-8 .gallery-caption,
 .entry .gallery-columns-9 .gallery-caption,
-.sidebar .gallery-columns-2 .gallery-caption,
-.sidebar .gallery-columns-3 .gallery-caption,
-.sidebar .gallery-columns-4 .gallery-caption,
-.sidebar .gallery-columns-5 .gallery-caption,
-.sidebar .gallery-columns-6 .gallery-caption,
-.sidebar .gallery-columns-7 .gallery-caption,
-.sidebar .gallery-columns-8 .gallery-caption,
-.sidebar .gallery-columns-9 .gallery-caption { display: none!important; }
+.widget .gallery-columns-2 .gallery-caption,
+.widget .gallery-columns-3 .gallery-caption,
+.widget .gallery-columns-4 .gallery-caption,
+.widget .gallery-columns-5 .gallery-caption,
+.widget .gallery-columns-6 .gallery-caption,
+.widget .gallery-columns-7 .gallery-caption,
+.widget .gallery-columns-8 .gallery-caption,
+.widget .gallery-columns-9 .gallery-caption { display: none!important; }
 
 /*  base : headings
 /* ------------------------------------ */
