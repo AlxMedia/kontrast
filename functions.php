@@ -590,6 +590,7 @@ if ( ! function_exists( 'kontrast_embed_html_jp' ) ) {
 }
 add_filter( 'video_embed_html', 'kontrast_embed_html_jp' );
 
+
 /* ------------------------------------------------------------------------- *
  *  Actions
 /* ------------------------------------------------------------------------- */
@@ -628,6 +629,39 @@ if ( ! function_exists( 'kontrast_html_js_class' ) ) {
 
 }
 add_action( 'wp_head', 'kontrast_html_js_class', 1 );
+
+
+/*  Admin panel css
+/* ------------------------------------ */
+if ( ! function_exists( 'kontrast_admin_panel_css' ) ) {
+	
+	function kontrast_admin_panel_css() {
+		global $pagenow;
+		if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
+			echo '<style>
+				.rwmb-image-select { width: auto!important; height: auto!important; }
+				.rwmb-text { width: 100%; }
+			</style>';
+		}
+	}
+
+}
+add_action( 'admin_head', 'kontrast_admin_panel_css' );
+
+
+/*  Admin panel widget css
+/* ------------------------------------ */
+if ( ! function_exists( 'kontrast_admin_panel_widget_css' ) ) {
+	
+	function kontrast_admin_panel_widget_css( $hook ) {
+		if ( 'widgets.php' != $hook ) {
+			return;
+		}
+		wp_enqueue_style( 'kontrast-widgets-admin', get_template_directory_uri().'/functions/widgets/widgets.css' );
+	}
+
+}
+add_action( 'admin_enqueue_scripts', 'kontrast_admin_panel_widget_css' );
 
 
 /*  TGM plugin activation
@@ -681,21 +715,6 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 add_action('woocommerce_before_main_content', 'kontrast_wc_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'kontrast_wc_wrapper_end', 10);
-
-
-/*  Admin panel css
-/* ------------------------------------ */
-function kontrast_admin_panel_css() {
-	global $pagenow;
-	if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
-		echo '<style>
-			.rwmb-image-select { width: auto!important; height: auto!important; }
-			.rwmb-text { width: 100%; }
-		</style>';
-	}
-}
-
-add_action('admin_head', 'kontrast_admin_panel_css');
 
 
 /* ------------------------------------------------------------------------- *

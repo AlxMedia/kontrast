@@ -136,13 +136,6 @@ class KontrastPosts extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults );
 ?>
 
-	<style>
-	.widget .widget-inside .alx-options-posts .postform { width: 100%; }
-	.widget .widget-inside .alx-options-posts p { margin: 3px 0; }
-	.widget .widget-inside .alx-options-posts hr { margin: 20px 0 10px; }
-	.widget .widget-inside .alx-options-posts h4 { margin-bottom: 10px; }
-	</style>
-
 	<div class="alx-options-posts">
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e( 'Title:', 'kontrast' ); ?></label>

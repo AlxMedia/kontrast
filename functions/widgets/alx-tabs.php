@@ -312,13 +312,6 @@ class KontrastTabs extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults );
 ?>
 
-	<style>
-	.widget .widget-inside .alx-options-tabs .postform { width: 100%; }
-	.widget .widget-inside .alx-options-tabs p { margin: 3px 0; }
-	.widget .widget-inside .alx-options-tabs hr { margin: 20px 0 10px; }
-	.widget .widget-inside .alx-options-tabs h4 { margin-bottom: 10px; }
-	</style>
-
 	<div class="alx-options-tabs">
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id('title') ); ?>"><?php esc_html_e( 'Title:', 'kontrast' ); ?></label>
