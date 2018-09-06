@@ -323,9 +323,9 @@ h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 600; -ms-word-wrap: break-wor
 #wrapper { min-width: 1024px; height: 100%; }
 .container { padding: 0; }
 .container-inner { max-width: 1380px; min-width: 1380px; width: 100%; margin: 0 auto; }
-.main { position: relative; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+.main { position: relative; border-left: 1px solid #eee; border-right: 1px solid #eee; }
 .main-inner { position: relative; min-height: 600px; /* instead of sticky footer */ }
-.content { width: 100%; position: relative; border-top: 1px solid #ddd; }
+.content { width: 100%; position: relative; border-top: 1px solid #eee; }
 .pad { padding: 30px 30px 20px; }
 
 /* boxed */
@@ -1085,9 +1085,9 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.05), -1px 0 0 rgba(0,0,0,0.2); }
 transition-property: background color; transition-duration: 0.2s; transition-timing-function: ease-out; }
 
 /* sidebar-specific */
-.sidebar .post-nav li a { border-bottom: 1px solid #ddd; }
+.sidebar .post-nav li a { border-bottom: 1px solid #eee; }
 .sidebar .post-nav li.previous a,
-.sidebar .post-nav li.next a { border-bottom: 1px solid #ddd; }
+.sidebar .post-nav li.next a { border-bottom: 1px solid #eee; }
 .sidebar.dark .post-nav li a { border-bottom: 1px solid #333; }
 .sidebar.dark .post-nav li a strong { color: #777; }
 .sidebar.dark .post-nav li a span { color: #ccc; }
