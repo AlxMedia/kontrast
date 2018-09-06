@@ -189,17 +189,6 @@ Kirki::add_field( 'kontrast_theme', array(
 	'section'		=> 'blog',
 	'default'		=> 'on',
 ) );
-if( function_exists( 'alx_ext_sharrre_template' ) ) {
-	// Blog: Twitter Username
-	Kirki::add_field( 'kontrast_theme', array(
-		'type'			=> 'text',
-		'settings'		=> 'twitter-username',
-		'label'			=> esc_html__( 'Single - Share Bar - Twitter Username', 'kontrast' ),
-		'description'	=> esc_html__( 'Your @username will be added to share-tweets of your posts (optional)', 'kontrast' ),
-		'section'		=> 'blog',
-		'default'		=> '',
-	) );
-}
 // Blog: Single - Authorbox
 Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'switch',

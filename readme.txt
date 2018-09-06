@@ -2,10 +2,10 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.5
+Version: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
 
 == Description ==
 
@@ -80,6 +80,12 @@ Right sidebar images
 3. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.0.6 - 2018-09-06 =
+* Added missing style.css tags
+* Updated style.css edit warning
+* Updated .pot language file
+* Moved twitter username option to companion plugin
 
 = 1.0.5 - 2018-09-06 =
 * Moved plugin territory features to companion plugin
