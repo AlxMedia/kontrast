@@ -83,6 +83,7 @@ Right sidebar images
 
 = 1.0.6 - 2018-09-06 =
 * Added missing style.css tags
+* Added styling option for header menu background
 * Updated style.css edit warning
 * Updated .pot language file
 * Moved twitter username option to companion plugin

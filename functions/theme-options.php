@@ -765,6 +765,14 @@ Kirki::add_field( 'kontrast_theme', array(
 	'section'		=> 'styling',
 	'default'		=> '#dd5827',
 ) );
+// Styling: Header Menu Background
+Kirki::add_field( 'kontrast_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-header-menu',
+	'label'			=> esc_html__( 'Header Menu Background', 'kontrast' ),
+	'section'		=> 'styling',
+	'default'		=> '#222222',
+) );
 // Styling: Footer Menu Background
 Kirki::add_field( 'kontrast_theme', array(
 	'type'			=> 'color',

@@ -740,21 +740,21 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 
 	/* common */
 	#nav-header .nav { font-weight: 600; text-transform: uppercase; }
-	#nav-header .nav li a { font-size: 15px; color: #ccc; }	
+	#nav-header .nav li a { font-size: 15px; color: rgba(255,255,255,0.75); }	
 	/* level 1 */
-	#nav-header .nav > li { border-right: 1px solid #333; }
+	#nav-header .nav > li { border-right: 1px solid rgba(255,255,255,0.1); }
 	#nav-header .nav > li > a:hover, 
-	#nav-header .nav > li:hover > a { background: transparent; }
+	#nav-header .nav > li:hover > a { background-color: rgba(0,0,0,0.1); }
 	#nav-header .nav li > a:hover, 
 	#nav-header .nav li:hover > a, 
 	#nav-header .nav li.current_page_item > a, 
 	#nav-header .nav li.current-menu-item > a,
 	#nav-header .nav li.current-menu-ancestor > a,
-	#nav-header .nav li.current-post-parent > a { color: #26abd3; }
+	#nav-header .nav li.current-post-parent > a { color: #fff; }
 	/* level 2 & 3 */
-	#nav-header .nav ul { background: #222; border-top: 0; }
-	#nav-header .nav ul li { border-bottom: 1px solid #333; }
-	#nav-header .nav ul li:last-child { border-bottom: none; }
+	#nav-header .nav ul { background: #222 url(img/opacity-10.png) repeat; border-top: 0; }
+	#nav-header .nav ul li { -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.1); box-shadow: 0 1px 0 rgba(255,255,255,0.1); }
+	#nav-header .nav ul li:last-child { box-shadow: none; -webkit-box-shadow: none; }
 	#nav-header .nav ul li a { font-size: 13px; }
 	
 }
@@ -762,12 +762,12 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 	
 	/* common */
 	#nav-header .nav { padding-bottom: 20px; }
-	#nav-header .nav li a { color: #ccc; border-bottom: 1px solid #333; }	
+	#nav-header .nav li a { color: rgba(255,255,255,0.75); border-bottom: 1px solid rgba(255,255,255,0.15); }	
 	/* level 1 */
 	#nav-header .nav li > a:hover, 
 	#nav-header .nav li.current_page_item > a, 
 	#nav-header .nav li.current-menu-item > a,
-	#nav-header .nav li.current-post-parent > a { background: #333; color: #26abd3; }
+	#nav-header .nav li.current-post-parent > a { background-color: rgba(0,0,0,0.1); color: #fff; }
 	
 }
 
