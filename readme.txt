@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 4.9
 Tested up to: 4.9
-Version: 1.0.6
+Version: 1.0.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -80,6 +80,9 @@ Right sidebar images
 3. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.0.7 - 2018-09-22 =
+* Updated .pot language file
 
 = 1.0.6 - 2018-09-06 =
 * Added missing style.css tags
