@@ -83,6 +83,7 @@ Right sidebar images
 
 = 1.0.9 - 2019-01-18 =
 * Removed custom widgets from theme
+* Updated to Kirki 3.0.35.3
 
 = 1.0.8 - 2019-01-15 =
 * Added custom image sizes for alx-posts and alx-tabs widgets (now loading from alx-extensions plugin instead)
