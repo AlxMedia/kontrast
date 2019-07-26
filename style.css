@@ -926,7 +926,7 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.05), -1px 0 0 rgba(0,0,0,0.2); }
  *  Post Entry
 /* ------------------------------------------------------------------------- */
 .content .post,
-.content .page { position: relative; overflow: hidden; }
+.content .page { position: relative; }
 
 .blog .post,
 .single .post,
