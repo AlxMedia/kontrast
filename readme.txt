@@ -61,27 +61,27 @@ Source: https://github.com/aristath/kirki
 
 Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
-Source: http://pixabay.com/
+Source: https://stocksnap.io
 
 Left sidebar images
-1. ID 351478 - https://pixabay.com/en/mixing-desk-mixer-slide-control-351478/ - CC0 1.0 Universal (CC0 1.0)
-2. ID 77552 - https://pixabay.com/en/motorcycle-zero-s-action-77552/ - CC0 1.0 Universal (CC0 1.0)
-3. ID 165040 - https://pixabay.com/en/orange-falling-water-splash-fresh-165040/ - CC0 1.0 Universal (CC0 1.0)
-4. ID 405864 - https://pixabay.com/en/skatepark-skateboarding-skateboard-405864/ - CC0 1.0 Universal (CC0 1.0)
-5. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
-6. ID 336376 - https://pixabay.com/en/blogging-blogger-office-business-336376/ - CC0 1.0 Universal (CC0 1.0)
-7. ID 930715 - https://pixabay.com/en/superbike-motorsport-fast-speed-930715/ - CC0 1.0 Universal (CC0 1.0)
-8. ID 122705 - https://pixabay.com/en/smile-laugh-girl-teeth-mouth-chin-122705/ - CC0 1.0 Universal (CC0 1.0)
+1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/Y01VDYAX63 - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/DGYLV0KMUY - CC0 1.0 Universal (CC0 1.0)
+4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
+5. https://stocksnap.io/photo/UEQ0178WUT - CC0 1.0 Universal (CC0 1.0)
+6. https://stocksnap.io/photo/TNK87N7464 - CC0 1.0 Universal (CC0 1.0)
+7. https://stocksnap.io/photo/SA20YXQRC4 - CC0 1.0 Universal (CC0 1.0)
 
 Content images
-1. ID 336376 - https://pixabay.com/en/blogging-blogger-office-business-336376/ - CC0 1.0 Universal (CC0 1.0)
-2. ID 351478 - https://pixabay.com/en/mixing-desk-mixer-slide-control-351478/ - CC0 1.0 Universal (CC0 1.0)
-3. ID 77552 - https://pixabay.com/en/motorcycle-zero-s-action-77552/ - CC0 1.0 Universal (CC0 1.0)
+1. https://stocksnap.io/photo/DGYLV0KMUY - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/UEQ0178WUT - CC0 1.0 Universal (CC0 1.0)
 
 Right sidebar images
-1. ID 53769 - https://pixabay.com/en/bridge-japanese-garden-arch-park-53769/ - CC0 1.0 Universal (CC0 1.0)
-2. ID 405864 - https://pixabay.com/en/skatepark-skateboarding-skateboard-405864/ - CC0 1.0 Universal (CC0 1.0)
-3. ID 205220 - https://pixabay.com/en/little-girl-girl-smile-africa-205220/ - CC0 1.0 Universal (CC0 1.0)
+1. https://stocksnap.io/photo/23H66MTGXA - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/Y01VDYAX63 - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/DGYLV0KMUY - CC0 1.0 Universal (CC0 1.0)
+4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
 
