@@ -92,6 +92,7 @@ Right sidebar images
 * Fixed themeforms styling issue
 * Updated language files
 * Removed Responsive Lightbox as recommended plugin
+* Updated theme screenshot and readme credits, now using images from stocksnap.io only
 
 = 1.1.2 - 2019-03-11 =
 * Updated to Kirki 3.0.38
