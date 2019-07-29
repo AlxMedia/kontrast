@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.0
-Version: 1.1.3
+Version: 1.1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -84,6 +84,9 @@ Right sidebar images
 4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.1.4 - 2019-07-29 =
+* Updated to Font Awesome 5 Free (5.9.0)
 
 = 1.1.3 - 2019-07-26 =
 * Added theme accessibility with skip links
