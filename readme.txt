@@ -2,14 +2,14 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.0
-Version: 1.1.4
+Version: 1.1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
 
 == Description ==
 
-Kontrast is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 220px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured story or slider, 10 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
+Kontrast is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 220px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured story or slider, 10 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features. Demo: http://demo.alx.media/x/?theme=Kontrast
 
 == Installation ==
 
@@ -84,6 +84,9 @@ Right sidebar images
 4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.1.5 - 2019-08-11 =
+* Updated theme description
 
 = 1.1.4 - 2019-07-29 =
 * Updated to Font Awesome 5 Free (5.9.0)
