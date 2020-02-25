@@ -1,8 +1,8 @@
 === Kontrast ===
 Contributors: alxmedia
 Requires at least: 5.0
-Tested up to: 5.0
-Version: 1.1.5
+Tested up to: 5.3.2
+Version: 1.1.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -84,6 +84,11 @@ Right sidebar images
 4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.1.6 - 2020-02-25 =
+* Fixed comments form checkbox position
+* Updated to Font Awesome 5.12.1
+* Updated to Kirki 3.0.45
 
 = 1.1.5 - 2019-08-11 =
 * Updated theme description
