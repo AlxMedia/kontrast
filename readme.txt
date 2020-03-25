@@ -86,6 +86,7 @@ Right sidebar images
 == Changelog ==
 
 = 1.1.7 - 2020-03-25 =
+* Fixed Chrome overflow issue
 * Removed ?filter=5 from theme review link
 * Removed responsive css on/off option
 * Removed unused alx-extensions plugin override css
