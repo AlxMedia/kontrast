@@ -755,7 +755,6 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul span { border-bottom: 1px solid rgba(255,255,255,0.06); }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul li:last-child span { border-bottom: 0; }
 #nav-header-nav.nav-menu:not(.mobile) button.active { background: rgba(255,255,255,0.1); }
-
 #nav-header-nav.nav-menu:not(.mobile) .menu ul { background: #222; }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul:after { border-bottom-color: #222; }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul ul:after { border-right-color: #222; }
@@ -782,7 +781,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 
 /* subheader menu styling */
 #nav-subheader-nav.nav-menu:not(.mobile) { background: #f2f2f2; text-transform: uppercase; font-size: 14px; font-weight: 400; border-bottom: 1px solid #e1e1e1; position: relative; z-index: 3; }
-#nav-subheader-nav.nav-menu:not(.mobile) .menu ul { box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+#nav-subheader-nav.nav-menu:not(.mobile) .menu ul { font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
 #nav-subheader-nav.nav-menu:not(.mobile) .menu ul span { border-bottom: 1px solid rgba(0,0,0,0.06); }
 #nav-subheader-nav.nav-menu:not(.mobile) .menu ul li:last-child span { border-bottom: 0; }
 #nav-subheader-nav.nav-menu:not(.mobile) button.active { background: rgba(0,0,0,0.05); }
