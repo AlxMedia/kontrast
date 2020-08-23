@@ -197,7 +197,7 @@ a,
 			// footer menu color
 			if ( get_theme_mod('color-footer-menu','#333333') != '#333333' ) {
 				$styles .= '
-#footer-menu-footer,
+#wrap-nav-footer,
 #footer .nav-menu.mobile,
 #footer .nav-menu:not(.mobile) .menu ul,
 #footer-bottom #back-to-top { background-color: '.esc_attr( get_theme_mod('color-footer-menu') ).'; }
