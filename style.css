@@ -1,7 +1,7 @@
 /*
 Theme Name: Kontrast
 Theme URI: http://alx.media/themes/kontrast/
-Version: 1.2.1
+Version: 1.2.2
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.5
@@ -611,20 +611,22 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 
 /* menu hide and display */
 @media only screen and (min-width: 720px) {
-	.mobile-menu #nav-mobile-nav { display: none; }
+	.mobile-menu #wrap-nav-mobile { display: none; }
 }
 @media only screen and (max-width: 719px) {
-	.mobile-menu #nav-topbar-nav,
-	.mobile-menu #nav-header-nav,
-	.mobile-menu #nav-subheader-nav { display: none; } 
+	.mobile-menu #wrap-nav-topbar,
+	.mobile-menu #wrap-nav-header,
+	.mobile-menu #wrap-nav-subheader { display: none; } 
 	#nav-mobile,
 	#nav-topbar,
 	#nav-header,
-	#nav-subheader { display: none; }
+	#nav-subheader,
+	#nav-footer { display: none; }
 	.mobile #nav-mobile,
 	.mobile #nav-topbar,
 	.mobile #nav-header,
-	.mobile #nav-subheader { display: block; }
+	.mobile #nav-subheader,
+	.mobile #nav-footer { display: block; }
 }
 @media only screen and (min-width: 1025px) {
 	/* fixed nav */
