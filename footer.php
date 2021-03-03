@@ -55,7 +55,7 @@
 		<?php if ( has_nav_menu('footer') ): ?>
 			<div id="wrap-nav-footer" class="wrap-nav">
 				<div class="container-inner">
-				<?php \AlxMedia\Nav::nav_menu(array('theme_location'=>'footer','menu_id' => 'nav-footer','fallback_cb'=> false)); ?>
+				<?php \Kontrast\Nav::nav_menu(array('theme_location'=>'footer','menu_id' => 'nav-footer','fallback_cb'=> false)); ?>
 				</div>
 			</div>
 		<?php endif; ?>
