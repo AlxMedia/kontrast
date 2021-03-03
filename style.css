@@ -765,7 +765,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4); }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul li:last-child span { border-bottom: 0; }
 #nav-header-nav.nav-menu:not(.mobile) button.active { background: rgba(255,255,255,0.1); }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul { background: #222; }
-#nav-header-nav.nav-menu:not(.mobile) .menu ul:after { border-bottom-color: #222; }
+#nav-header-nav.nav-menu:not(.mobile) .menu ul:after { border-bottom-color: transparent; }
 #nav-header-nav.nav-menu:not(.mobile) .menu ul ul:after { border-right-color: #222; }
 
 #nav-header-nav.nav-menu:not(.mobile) li.current_page_item > span > a, 
