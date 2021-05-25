@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kontrast\n"
-"POT-Creation-Date: 2021-03-03 15:51+0100\n"
+"POT-Creation-Date: 2021-05-25 13:42+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -81,63 +81,63 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:179
 msgid "Primary"
 msgstr ""
 
-#: functions.php:177 functions.php:178
+#: functions.php:179 functions.php:180
 msgid "Normal full width sidebar"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:180
 msgid "Secondary"
 msgstr ""
 
-#: functions.php:179 functions/theme-options.php:243
+#: functions.php:181 functions/theme-options.php:243
 msgid "Header Ads"
 msgstr ""
 
-#: functions.php:180 functions/theme-options.php:270
+#: functions.php:182 functions/theme-options.php:270
 msgid "Footer Ads"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:182
 msgid "Footer ads area"
 msgstr ""
 
-#: functions.php:181
+#: functions.php:183
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:181 functions.php:182 functions.php:183 functions.php:184
+#: functions.php:183 functions.php:184 functions.php:185 functions.php:186
 msgid "Widgetized footer"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:184
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:185
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:186
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:678
+#: functions.php:680
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:682
+#: functions.php:684
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:686
+#: functions.php:688
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:690
+#: functions.php:692
 msgid "WP-PageNavi"
 msgstr ""
 
