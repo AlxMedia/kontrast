@@ -65,6 +65,9 @@ if ( ! function_exists( 'kontrast_setup' ) ) {
 
 		// Enable support for selective refresh of widgets in Customizer.
 		add_theme_support( 'customize-selective-refresh-widgets' );
+		
+		// Disable support for widgets block editor
+		remove_theme_support( 'widgets-block-editor' );
 
 		// Thumbnail sizes
 		add_image_size( 'kontrast-small', 160, 160, true );
