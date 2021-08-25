@@ -4,7 +4,7 @@ Requires at least: 5.0
 Tested up to: 5.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
+Tags: blog, news, entertainment, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background, footer-widgets
 
 == Description ==
 
@@ -88,6 +88,9 @@ Right sidebar images
 4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.2.8 - 2021-08-25 =
+* Added missing theme tags for wordpress.org
 
 = 1.2.7 - 2021-07-23 =
 * Disabled support for widgets block editor
