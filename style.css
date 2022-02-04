@@ -1584,6 +1584,12 @@ box-shadow: inset 0 1px 0 rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.12),
   .flex-direction-nav .flex-next { opacity: .7; right: 0; }
 }
 
+/* fix */
+.flexslider#flexslider-featured .slides > li { display: block; height: 1px; width: 1px; }
+.flexslider#flexslider-featured .flex-viewport .slides > li { display: block; height: auto; }
+.flexslider#flexslider-featured .slides > li > article { overflow: hidden; height: 0; width: 0; }
+.flexslider#flexslider-featured .flex-viewport .slides > li > article { height: auto; width: auto; }
+
 
 /* ------------------------------------------------------------------------- *
  *  Accessibility
