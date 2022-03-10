@@ -89,8 +89,8 @@ Right sidebar images
 
 == Changelog ==
 
-= 1.2.9 - 2022-01-24 =
-* Updated to Kirki 4.0
+= 1.2.9 - 2022-03-10 =
+* Updated to Kirki 4.0.22
 * Fixed featured flexslider not loading images, disable native lazy load
 
 = 1.2.8 - 2021-08-25 =
