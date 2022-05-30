@@ -1,7 +1,7 @@
 === Kontrast ===
 Contributors: alxmedia
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, news, entertainment, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background, footer-widgets
@@ -88,6 +88,10 @@ Right sidebar images
 4. https://stocksnap.io/photo/UYYDN7X5IS - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.3.0 - 2022-05-30 =
+* Fixed ol and ul box-sizing content-box styling for WP 6.0
+* Updated to Kirki 4.0.24
 
 = 1.2.9 - 2022-03-10 =
 * Updated to Kirki 4.0.22
